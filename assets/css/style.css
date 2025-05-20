@@ -1,0 +1,19 @@
+  .scrollable-dropdown {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  .scrollable-dropdown::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollable-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .scrollable-dropdown::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .scrollable-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
