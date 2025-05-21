@@ -1,3 +1,51 @@
+.borderBottomSm {
+  position: relative; 
+}
+
+.borderBottomSm::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%; 
+  width: 80%;
+  border-bottom: 1px solid #efefef;
+}
+.borderBottom {
+  position: relative; 
+}
+
+.borderBottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0%; 
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+.borderRight {
+  position: relative;
+  min-height: 100px; /* Ensures the container has height for the border to be visible */
+}
+
+.borderRight::after {
+  content: '';
+  position: absolute;
+  top: 10%; /* Starts 10% from the top */
+  right: 0; /* Aligns the border to the right edge */
+  height: 80%; /* Covers 80% of the container's height */
+  border-right: 1px solid #efefef;
+}
+.borderNone{
+  border: none;
+}
+.cardYSpacerNone{
+  --bs-card-spacer-y: 0rem;
+}
+.paddingX{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
     .bg-white-imp { background-color: #fff !important; }
     .border-c1-t1 { border-top: 1px solid #dee2e6; }
     .hover-blue:hover { color: #0d6efd !important; }
@@ -95,3 +143,23 @@
             .mobileHeader, .sidepanel { display: none !important; }
         }
 /* mobile menu end */
+
+/* top serction start  */
+    .hover-blue:hover { color: #0d6efd !important; }
+    .bg-red { background-color: #dc3545; }
+    .border-radius-5 { border-radius: 5px; }
+    .bg-light-gray { background-color: #f8f9fa; }
+    .divider { border-top: 1px solid #dee2e6; }
+    .section-title { position: relative; padding-left: 15px; }
+    .section-title::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 5px; background-color: #dc3545; }
+    .card-img-top { object-fit: cover; }
+    .latest-tab { max-height: 400px; overflow-y: auto; }
+    .popular-count { background-color: #dc3545; color: white; width: 25px; height: 25px; line-height: 25px; text-align: center; border-radius: 50%; }
+    .tab-content { border: 1px solid #dee2e6; border-top: none; border-radius: 0 0 5px 5px; }
+    .nav-tabs .nav-link { border: none; }
+    .nav-tabs .nav-link.active { border-bottom: 2px solid #dc3545; }
+    .hover-blue:hover { color: blue; }
+    .bg-danger { background-color: #dc3545; }
+    .color-white { color: #fff; }
+    .hover-black:hover { color: #000; }
+/* top serction end */
