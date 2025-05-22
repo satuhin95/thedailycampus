@@ -22,6 +22,18 @@
   width: 100%;
   border-bottom: 1px solid #efefef;
 }
+.borderTop {
+  position: relative;
+}
+
+.borderTop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  border-top: 1px solid #efefef;
+}
 .borderRight {
   position: relative;
   min-height: 100px; /* Ensures the container has height for the border to be visible */
@@ -216,6 +228,33 @@
          .customCard:hover .customCard-title {
             /* color: rgba(72, 79, 73, 0.7);  */
         }
+        /* tdc old css start */
+a {
+  color: #212121;
+  text-decoration: none;
+}
+.vertical-bar-heavy {
+  padding-left: 20px;
+}
+.vertical-bar-heavy {
+  font-weight: bold;
+  border-left: 3px solid #000;
+  padding-left: 8px;
+}
+.news-title h3,
+.bigstory-h2 h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+.img_container img {
+  width: 100%;
+  height: auto;
+}
+.text-decoration-underline {
+  color: #1e1d1d;
+}
+/* tdc old css end */
+
 
         /* footer serction start  */
 
