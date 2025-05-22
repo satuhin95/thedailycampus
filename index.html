@@ -1,1015 +1,819 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="preload"
-      href="assets/fonts/SolaimanLipiNormal.woff"
-      as="font"
-      type="font/woff"
-      crossorigin
-    />
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome for icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <section id="header">
-      <!-- Pre Header Section start -->
-      <div class="d-none d-md-block">
-        <div class="container bg-white mt-3">
-          <div class="row align-items-center">
-            <div class="col-lg-4">
-              <div class="d-flex align-items-center">
-                <span
-                  class="cursor-pointer me-2"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#sidebarMenu"
-                  aria-controls="sidebarMenu"
-                >
-                  <i class="bi bi-list fs-5 text-dark"></i>
-                </span>
-                <span class="today-date">মঙ্গলবার, ২০ মে ২০২৫</span>
-              </div>
-            </div>
-            <div class="col-lg-4 text-center">
-              <a aria-label="Logo" href="#">
-                <img
-                  src="assets/images/logo.svg"
-                  alt="Logo"
-                  height="50"
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4">
-              <div class="d-flex justify-content-end align-items-center">
-                <a
-                  class="btn btn-outline-dark btn-sm me-2"
-                  href="#"
-                  target="_blank"
-                  >English</a
-                >
-                <div class="d-flex">
-                  <a
-                    aria-label="Facebook"
-                    href="#"
-                    target="_blank"
-                    class="text-dark me-2"
-                  >
-                    <i class="bi bi-facebook fs-5"></i>
-                  </a>
-                  <a
-                    aria-label="Twitter"
-                    href="#"
-                    target="_blank"
-                    class="text-dark me-2"
-                  >
-                    <i class="bi bi-twitter-x fs-5"></i>
-                  </a>
-                  <a
-                    aria-label="Linkedin"
-                    href="#"
-                    target="_blank"
-                    class="text-dark me-2"
-                  >
-                    <i class="bi bi-linkedin fs-5"></i>
-                  </a>
-                  <a
-                    aria-label="Instagram"
-                    href="#"
-                    target="_blank"
-                    class="text-dark me-2"
-                  >
-                    <i class="bi bi-instagram fs-5"></i>
-                  </a>
-                  <a
-                    aria-label="Youtube"
-                    href="#"
-                    target="_blank"
-                    class="text-dark"
-                  >
-                    <i class="bi bi-youtube fs-5"></i>
-                  </a>
-                </div>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preload" href="assets/fonts/SolaimanLipiNormal.woff" as="font" type="font/woff" crossorigin />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <section id="header">
+    <!-- Pre Header Section start -->
+    <div class="d-none d-md-block">
+      <div class="container bg-white mt-3">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <span class="cursor-pointer me-2" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu">
+                <i class="bi bi-list fs-5 text-dark"></i>
+              </span>
+              <span class="today-date">মঙ্গলবার, ২০ মে ২০২৫</span>
             </div>
           </div>
-        </div>
-
-        <nav id="navbar_top" class="navbar navbar-expand-lg bg-white shadow-sm">
-          <div class="container">
-            <div class="row w-100 align-items-center">
-              <div class="col-lg-1">
-                <div class="d-none d-md-block">
-                  <a aria-label="Logo" href="#">
-                    <!-- <img src="assets/images/logo.svg" alt="Logo" height="40"> -->
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#latest">সর্বশেষ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#national">জাতীয়</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#politics">রাজনীতি</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#economics">অর্থনীতি</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#international">আন্তর্জাতিক</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#country-news"
-                        id="countryDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        সারাদেশ
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        aria-labelledby="countryDropdown"
-                      >
-                        <li>
-                          <a class="dropdown-item" href="#location"
-                            >জেলার খবর</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#sports">খেলা</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#entertainment">বিনোদন</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#job-seek">চাকরি</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="moreDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        আরও
-                      </a>
-                      <ul
-                        class="dropdown-menu dropdown-menu-end scrollable-dropdown"
-                        aria-labelledby="moreDropdown"
-                      >
-                        <li><a class="dropdown-item" href="#">জাতীয়</a></li>
-                        <li><a class="dropdown-item" href="#">রাজনীতি</a></li>
-                        <li><a class="dropdown-item" href="#">অর্থনীতি</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">আন্তর্জাতিক</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">সারাদেশ</a></li>
-                        <li><a class="dropdown-item" href="#">রাজধানী</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">শিক্ষাঙ্গন</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">খেলা</a></li>
-                        <li><a class="dropdown-item" href="#">বিনোদন</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">ডাক্তার আছেন</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">চাকরি</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">লাইফ স্টাইল</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">ইসলাম ও জীবন</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >বিজ্ঞান ও তথ্যপ্রযুক্তি</a
-                          >
-                        </li>
-                        <li><a class="dropdown-item" href="#">সাহিত্য</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">চিত্র বিচিত্র</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">সম্পাদকীয়</a>
-                        </li>
-                        <li><a class="dropdown-item" href="#">পরবাস</a></li>
-                        <li><a class="dropdown-item" href="#">বিচ্ছু</a></li>
-                        <li><a class="dropdown-item" href="#">ছবি</a></li>
-                        <li><a class="dropdown-item" href="#">ভিডিও</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">সাক্ষাৎকার</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">কর্পোরেট নিউজ</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">বিজ্ঞাপন বার্তা</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-1 text-end">
-                <a href="#" class="text-dark">
-                  <i class="bi bi-search fs-5"></i>
+          <div class="col-lg-4 text-center">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="50" loading="lazy" />
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-end align-items-center">
+              <a class="btn btn-outline-dark btn-sm me-2" href="#" target="_blank">English</a>
+              <div class="d-flex">
+                <a aria-label="Facebook" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a aria-label="Twitter" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-twitter-x fs-5"></i>
+                </a>
+                <a aria-label="Linkedin" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+                <a aria-label="Instagram" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a aria-label="Youtube" href="#" target="_blank" class="text-dark">
+                  <i class="bi bi-youtube fs-5"></i>
                 </a>
               </div>
-            </div>
-          </div>
-        </nav>
-
-        <!-- Offcanvas Menu for Mobile and Mega Menu -->
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="sidebarMenu"
-          aria-labelledby="sidebarMenuLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebarMenuLabel">মেনু</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">রাজনীতি</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">অর্থনীতি</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">আন্তর্জাতিক</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">সারাদেশ</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">রাজধানী</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">শিক্ষাঙ্গন</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">খেলা</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">বিনোদন</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ডাক্তার আছেন</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">চাকরি</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">লাইফ স্টাইল</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ইসলাম ও জীবন</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">বিজ্ঞান ও তথ্যপ্রযুক্তি</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">সাহিত্য</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">চিত্র বিচিত্র</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">সম্পাদকীয়</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">পরবাস</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">বিচ্ছু</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ছবি</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ভিডিও</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">সাক্ষাৎকার</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">কর্পোরেট নিউজ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">বিজ্ঞাপন বার্তা</a>
-              </li>
-            </ul>
-            <hr />
-            <div class="d-flex flex-wrap">
-              <a class="btn btn-info me-2 mb-2" href="#"
-                ><i class="bi bi-grid"></i> সব বিভাগ</a
-              >
-              <a class="btn btn-outline-dark me-2 mb-2" href="#"
-                ><i class="bi bi-film"></i> ভিডিও</a
-              >
-
-              <a class="btn btn-outline-dark me-2 mb-2" href="#" target="_blank"
-                ><i class="bi bi-megaphone"></i> বিজ্ঞাপন</a
-              >
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Pre Header Section End -->
-      <!-- Mobile Header -->
-      <div class="container mobileHeader d-block d-sm-none bg-light">
-        <div class="row align-items-center">
-          <div class="col-2">
-            <div class="text-end marginT8">
-              <span onclick="openNav()"
-                ><i class="fa fa-bars sidebarIcon colorBlack"></i
-              ></span>
+      <nav id="navbar_top" class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+            <div class="col-lg-1">
+              <div class="d-none d-md-block">
+                <a aria-label="Logo" href="#">
+                  <!-- <img src="assets/images/logo.svg" alt="Logo" height="40"> -->
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#latest">সর্বশেষ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#national">জাতীয়</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#politics">রাজনীতি</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#economics">অর্থনীতি</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">আন্তর্জাতিক</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#country-news" id="countryDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      সারাদেশ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#location">জেলার খবর</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sports">খেলা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#entertainment">বিনোদন</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#job-seek">চাকরি</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      আরও
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end scrollable-dropdown" aria-labelledby="moreDropdown">
+                      <li><a class="dropdown-item" href="#">জাতীয়</a></li>
+                      <li><a class="dropdown-item" href="#">রাজনীতি</a></li>
+                      <li><a class="dropdown-item" href="#">অর্থনীতি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">আন্তর্জাতিক</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">সারাদেশ</a></li>
+                      <li><a class="dropdown-item" href="#">রাজধানী</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">শিক্ষাঙ্গন</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">খেলা</a></li>
+                      <li><a class="dropdown-item" href="#">বিনোদন</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">ডাক্তার আছেন</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">চাকরি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">লাইফ স্টাইল</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">ইসলাম ও জীবন</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">বিজ্ঞান ও তথ্যপ্রযুক্তি</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">সাহিত্য</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">চিত্র বিচিত্র</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">সম্পাদকীয়</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">পরবাস</a></li>
+                      <li><a class="dropdown-item" href="#">বিচ্ছু</a></li>
+                      <li><a class="dropdown-item" href="#">ছবি</a></li>
+                      <li><a class="dropdown-item" href="#">ভিডিও</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">সাক্ষাৎকার</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">কর্পোরেট নিউজ</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">বিজ্ঞাপন বার্তা</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-1 text-end">
+              <a href="#" class="text-dark">
+                <i class="bi bi-search fs-5"></i>
+              </a>
             </div>
           </div>
-          <div class="col-6">
-            <div class="marginT2 text-start">
+        </div>
+      </nav>
+
+      <!-- Offcanvas Menu for Mobile and Mega Menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">মেনু</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">রাজনীতি</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">অর্থনীতি</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">আন্তর্জাতিক</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">সারাদেশ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">রাজধানী</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">শিক্ষাঙ্গন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">খেলা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিনোদন</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ডাক্তার আছেন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">চাকরি</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">লাইফ স্টাইল</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ইসলাম ও জীবন</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বিজ্ঞান ও তথ্যপ্রযুক্তি</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">সাহিত্য</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">চিত্র বিচিত্র</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">সম্পাদকীয়</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">পরবাস</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিচ্ছু</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ছবি</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ভিডিও</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">সাক্ষাৎকার</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">কর্পোরেট নিউজ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বিজ্ঞাপন বার্তা</a>
+            </li>
+          </ul>
+          <hr />
+          <div class="d-flex flex-wrap">
+            <a class="btn btn-info me-2 mb-2" href="#"><i class="bi bi-grid"></i> সব বিভাগ</a>
+            <a class="btn btn-outline-dark me-2 mb-2" href="#"><i class="bi bi-film"></i> ভিডিও</a>
+
+            <a class="btn btn-outline-dark me-2 mb-2" href="#" target="_blank"><i class="bi bi-megaphone"></i>
+              বিজ্ঞাপন</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pre Header Section End -->
+    <!-- Mobile Header -->
+    <div class="container mobileHeader d-block d-sm-none bg-light">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <div class="text-end marginT8">
+            <span onclick="openNav()"><i class="fa fa-bars sidebarIcon colorBlack"></i></span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="marginT2 text-start">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="text-end marginT4">
+            <a class="mobileHeaderOtherSite colorBlack" aria-label="English" href="#" target="_blank">English</a>
+            <a class="mobileHeaderOtherSite text-center" aria-label="Search" href="#">
+              <span><i class="fa fa-magnifying-glass searchIcon colorBlack"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div id="mySidepanel" class="sidepanel d-block d-sm-none">
+      <div class="container borderC1B1">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <div class="paddingT5 paddingB5 marginT5">
               <a aria-label="Logo" href="#">
-                <img
-                  src="assets/images/logo.svg"
-                  alt="Logo"
-                  height="35"
-                  loading="lazy"
-                />
+                <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
               </a>
             </div>
           </div>
           <div class="col-4">
-            <div class="text-end marginT4">
-              <a
-                class="mobileHeaderOtherSite colorBlack"
-                aria-label="English"
-                href="#"
-                target="_blank"
-                >English</a
-              >
-              <a
-                class="mobileHeaderOtherSite text-center"
-                aria-label="Search"
-                href="#"
-              >
-                <span
-                  ><i class="fa fa-magnifying-glass searchIcon colorBlack"></i
-                ></span>
-              </a>
+            <div class="text-end marginT10">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Mobile Sidebar Menu -->
-      <div id="mySidepanel" class="sidepanel d-block d-sm-none">
-        <div class="container borderC1B1">
-          <div class="row align-items-center">
-            <div class="col-8">
-              <div class="paddingT5 paddingB5 marginT5">
-                <a aria-label="Logo" href="#">
-                  <img
-                    src="assets/images/logo.svg"
-                    alt="Logo"
-                    height="35"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="text-end marginT10">
-                <a
-                  href="javascript:void(0)"
-                  class="closebtn"
-                  onclick="closeNav()"
-                  >×</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12 paddingLR5">
-              <div
-                class="borderC1-1 borderRadius5 marginT15 marginB15 paddingLR20 paddingT10 paddingB10"
-              >
-                <form method="get" action="#">
-                  <input type="hidden" name="search" value="yes" />
-                  <div class="row g-2">
-                    <div class="col-10">
-                      <input
-                        type="text"
-                        name="headline"
-                        class="form-control"
-                        placeholder="এখানে খুঁজুন..."
-                      />
-                    </div>
-                    <div class="col-2">
-                      <button
-                        type="submit"
-                        class="btn btn-block bg-black colorWhite"
-                      >
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <div class="col-6">
-              <a class="sidebarCatTitle" aria-label="প্রচ্ছদ" href="#"
-                ><i class="fa fa-caret-right"></i> প্রচ্ছদ</a
-              >
-            </div>
-            <div class="col-6">
-              <a class="sidebarCatTitle" aria-label="সর্বশেষ" href="#/latest"
-                ><i class="fa fa-caret-right"></i> সর্বশেষ</a
-              >
-            </div>
-            <div class="loadMenubarCategories"></div>
-            <div class="col-6">
-              <a
-                class="sidebarCatTitle"
-                aria-label="সব বিভাগ"
-                href="#/categories"
-                ><i class="fa fa-caret-right"></i> সব বিভাগ</a
-              >
-            </div>
-            <div class="col-6">
-              <a class="sidebarCatTitle" aria-label="আর্কাইভ" href="#/archive"
-                ><i class="fa fa-caret-right"></i> আর্কাইভ</a
-              >
-            </div>
-
-            <div class="col-6">
-              <a
-                class="sidebarCatTitle"
-                aria-label="বিজ্ঞাপন"
-                href="#/advertisement"
-                target="_blank"
-                ><i class="fa fa-caret-right"></i> বিজ্ঞাপন</a
-              >
-            </div>
-
-            <div class="col-12 marginT20">
-              <div
-                class="topSocialIcon text-center borderC1T1 borderC1B1 padding10"
-              >
-                <a
-                  aria-label="Facebook"
-                  href="#"
-                  target="_blank"
-                  class="fa-brands fa-facebook"
-                ></a>
-                <a
-                  aria-label="Twitter"
-                  href="#"
-                  target="_blank"
-                  class="fa-brands fa-x-twitter"
-                ></a>
-                <a
-                  aria-label="Linkedin"
-                  href="#"
-                  target="_blank"
-                  class="fa-brands fa-linkedin"
-                ></a>
-                <a
-                  aria-label="Instagram"
-                  href="#"
-                  target="_blank"
-                  class="fa-brands fa-instagram"
-                ></a>
-                <a
-                  aria-label="Youtube"
-                  href="#"
-                  target="_blank"
-                  class="fa-brands fa-youtube"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- top-section start -->
-    <section id="top-section">
-      <div class="container my-4">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="row borderBottom">
-                  <div class="col-lg-6">
-                    <img
-                      class="img-fluid"
-                      src="assets/img/bnp.jpg"
-                      alt="img"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>শাহবাগ অবরোধ ছাত্রদলের, যান চলাচল বন্ধ</h3>
-                    <p>
-                      ঢাকা বিশ্ববিদ্যালয়ের (ঢাবি) শিক্ষা ও গবেষণা ইনস্টিটিউটের
-                      (আইইআর) ছাত্র শাহরিয়ার আলম সাম্য হত্যাকাণ্ডে জড়িতদের
-                      গ্রেফতারের দাবিতে শাহবাগ মোড় অবরোধ করেছে বাংলাদেশ
-                      জাতীয়তাবাদী ছাত্রদল
-                    </p>
-                  </div>
-                </div>
-                <div class="row borderBottom pt-2">
-                  <div class="col-lg-6 borderRight">
-                    <div class="card mb-3 borderNone">
-                      <div class="row g-0">
-                        <div class="col-lg-8">
-                          <h5 class="card-title">
-                            প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
-                            বাংলাদেশকে
-                          </h5>
-                        </div>
-                        <div class="col-lg-4">
-                          <img
-                            class="img-fluid"
-                            src="assets/img/small.jpg"
-                            alt="..."
-                            loading="lazy"
-                          />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <p class="small">
-                            দুই ম্যাচের আমিরাত সিরিজটা ছিল একধরনের গা গরমের
-                            উপলক্ষ। পাকিস্তানে টি–টোয়েন্টি সিরিজ খেলতে যাওয়ার
-                            পথে শারজার দুটি ম্যাচকে এর চেয়ে বেশি গুরুত্ব
-                            বাংলাদেশ দল দিয়েছিল বলে মনে হয় না।
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="card mb-3 borderNone">
-                      <div class="row g-0">
-                        <div class="col-lg-8">
-                          <h5 class="card-title">
-                            প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
-                            বাংলাদেশকে
-                          </h5>
-                        </div>
-                        <div class="col-lg-4">
-                          <img
-                            src="assets/img/small.jpg"
-                            class="img-fluid"
-                            alt="..."
-                          />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <p class="small">
-                            দুই ম্যাচের আমিরাত সিরিজটা ছিল একধরনের গা গরমের
-                            উপলক্ষ। পাকিস্তানে টি–টোয়েন্টি সিরিজ খেলতে যাওয়ার
-                            পথে শারজার দুটি ম্যাচকে এর চেয়ে বেশি গুরুত্ব
-                            বাংলাদেশ দল দিয়েছিল বলে মনে হয় না।
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 mt-2">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img
-                        class="card-img-top"
-                        src="assets/img/pk.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                      <div class="card-body paddingX">
-                        <p class="small">
-                          চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="row">
-              <div class="col-12 borderBottomSm">
-                <div
-                  class="card cardYSpacerNone borderNone"
-                  style="width: 18rem"
-                >
-                  <img
-                    class="card-img-top"
-                    src="assets/img/pk.jpg"
-                    alt="..."
-                    loading="lazy"
-                  />
-                  <div class="card-body paddingX">
-                    <p class="text-center">
-                      চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 borderBottomSm pt-1">
-                <div class="card cardYSpacerNone borderNone">
-                  <div class="card-body">
-                    <p class="small">
-                      স্টারলিংক সংযোগ কীভাবে নেবেন, ভাগাভাগি করে ব্যবহার করা
-                      যাবে কি
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 borderBottomSm pt-1">
-                <div class="card cardYSpacerNone borderNone">
-                  <div class="card-body">
-                    <p class="small">
-                      সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
-                      এনেছেন?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 borderBottomSm pt-1">
-                <div class="card cardYSpacerNone borderNone">
-                  <div class="card-body">
-                    <p class="small">
-                      সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
-                      এনেছেন?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 pt-1">
-                <div class="card cardYSpacerNone borderNone">
-                  <div class="card-body">
-                    <p class="small">
-                      সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
-                      এনেছেন?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 mt-1 borderBottom">
-                <div class="card mb-3 borderNone">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <h6 class="small text-start">
-                        প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
-                      </h6>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        class="img-fluid"
-                        src="assets/img/small.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 mt-2 borderBottom">
-                <div class="card mb-3 borderNone">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <h6 class="small text-start">
-                        প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
-                      </h6>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        class="img-fluid"
-                        src="assets/img/small.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 mt-2 borderBottom">
-                <div class="card mb-3 borderNone">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <h6 class="small text-start">
-                        প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
-                      </h6>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        class="img-fluid"
-                        src="assets/img/small.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 mt-2">
-                <div class="card mb-3 borderNone">
-                  <div class="row g-0">
-                    <div class="col-lg-8">
-                      <h6 class="small text-start">
-                        প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
-                      </h6>
-                    </div>
-                    <div class="col-lg-4">
-                      <img
-                        class="img-fluid"
-                        src="assets/img/small.jpg"
-                        alt="..."
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="row">
-              <div class="col-12">
-                <div
-                  class="card"
-                  style="
-                    width: 300px;
-                    height: 250px;
-                    border: none;
-                    margin-top: 2px;
-                    margin-bottom: 2px;
-                  "
-                >
-                  <div class="card-body" style="padding: 0; height: 100%">
-                    <img
-                      class="img-fluid"
-                      src="assets/img/ads.gif"
-                      alt="..."
-                      loading="lazy"
-                      style="width: 100%; height: 100%; object-fit: cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div
-                  class="card"
-                  style="
-                    width: 300px;
-                    height: 250px;
-                    border: none;
-                    margin-top: 2px;
-                    margin-bottom: 2px;
-                  "
-                >
-                  <div class="card-body" style="padding: 0; height: 100%">
-                    <img
-                      class="img-fluid"
-                      src="assets/img/ads2.gif"
-                      alt="..."
-                      loading="lazy"
-                      style="width: 100%; height: 100%; object-fit: cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div
-                  class="card"
-                  style="
-                    width: 300px;
-                    height: 250px;
-                    border: none;
-                    margin-top: 2px;
-                    margin-bottom: 2px;
-                  "
-                >
-                  <div class="card-body" style="padding: 0; height: 100%">
-                    <img
-                      class="img-fluid"
-                      src="assets/img/tdc.gif"
-                      alt="..."
-                      loading="lazy"
-                      style="width: 100%; height: 100%; object-fit: cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container">
-        <div style="width: fit-content; margin: 0 5px">
-          <img src="assets/img/97090.gif" alt="ads" srcset="" />
-        </div>
-      </div>
-    </section>
-    <!-- top-section end -->
-    <section id="top-category">
-      <div class="container my-5">
         <div class="row">
-          <div class="col-lg-3">
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <h3 class="text-center">Category</h3>
-                <div class="customCard shadow-sm">
-                  <div
-                    class="customCard-img-bg"
-                    style="
-                      background-image: url('assets/img/card.jpg');
-                    "
-                  >
-                    <p class="customCard-title">
-                      Using IMG tag inside a container
-                    </p>
+          <div class="col-12 paddingLR5">
+            <div class="borderC1-1 borderRadius5 marginT15 marginB15 paddingLR20 paddingT10 paddingB10">
+              <form method="get" action="#">
+                <input type="hidden" name="search" value="yes" />
+                <div class="row g-2">
+                  <div class="col-10">
+                    <input type="text" name="headline" class="form-control" placeholder="এখানে খুঁজুন..." />
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-block bg-black colorWhite">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="প্রচ্ছদ" href="#"><i class="fa fa-caret-right"></i> প্রচ্ছদ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সর্বশেষ" href="#/latest"><i class="fa fa-caret-right"></i>
+              সর্বশেষ</a>
+          </div>
+          <div class="loadMenubarCategories"></div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সব বিভাগ" href="#/categories"><i class="fa fa-caret-right"></i> সব
+              বিভাগ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="আর্কাইভ" href="#/archive"><i class="fa fa-caret-right"></i>
+              আর্কাইভ</a>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="বিজ্ঞাপন" href="#/advertisement" target="_blank"><i
+                class="fa fa-caret-right"></i> বিজ্ঞাপন</a>
+          </div>
+
+          <div class="col-12 marginT20">
+            <div class="topSocialIcon text-center borderC1T1 borderC1B1 padding10">
+              <a aria-label="Facebook" href="#" target="_blank" class="fa-brands fa-facebook"></a>
+              <a aria-label="Twitter" href="#" target="_blank" class="fa-brands fa-x-twitter"></a>
+              <a aria-label="Linkedin" href="#" target="_blank" class="fa-brands fa-linkedin"></a>
+              <a aria-label="Instagram" href="#" target="_blank" class="fa-brands fa-instagram"></a>
+              <a aria-label="Youtube" href="#" target="_blank" class="fa-brands fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- top-section start -->
+  <section id="top-section">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row borderBottom">
+                <div class="col-lg-6">
+                  <img class="img-fluid" src="assets/img/bnp.jpg" alt="img" loading="lazy" />
+                </div>
+                <div class="col-lg-6">
+                  <h3>শাহবাগ অবরোধ ছাত্রদলের, যান চলাচল বন্ধ</h3>
+                  <p>
+                    ঢাকা বিশ্ববিদ্যালয়ের (ঢাবি) শিক্ষা ও গবেষণা ইনস্টিটিউটের
+                    (আইইআর) ছাত্র শাহরিয়ার আলম সাম্য হত্যাকাণ্ডে জড়িতদের
+                    গ্রেফতারের দাবিতে শাহবাগ মোড় অবরোধ করেছে বাংলাদেশ
+                    জাতীয়তাবাদী ছাত্রদল
+                  </p>
+                </div>
+              </div>
+              <div class="row borderBottom pt-2">
+                <div class="col-lg-6 borderRight">
+                  <div class="card mb-3 borderNone">
+                    <div class="row g-0">
+                      <div class="col-lg-8">
+                        <h5 class="card-title">
+                          প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                          বাংলাদেশকে
+                        </h5>
+                      </div>
+                      <div class="col-lg-4">
+                        <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="small">
+                          দুই ম্যাচের আমিরাত সিরিজটা ছিল একধরনের গা গরমের
+                          উপলক্ষ। পাকিস্তানে টি–টোয়েন্টি সিরিজ খেলতে যাওয়ার
+                          পথে শারজার দুটি ম্যাচকে এর চেয়ে বেশি গুরুত্ব
+                          বাংলাদেশ দল দিয়েছিল বলে মনে হয় না।
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card mb-3 borderNone">
+                    <div class="row g-0">
+                      <div class="col-lg-8">
+                        <h5 class="card-title">
+                          প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                          বাংলাদেশকে
+                        </h5>
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/small.jpg" class="img-fluid" alt="..." />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="small">
+                          দুই ম্যাচের আমিরাত সিরিজটা ছিল একধরনের গা গরমের
+                          উপলক্ষ। পাকিস্তানে টি–টোয়েন্টি সিরিজ খেলতে যাওয়ার
+                          পথে শারজার দুটি ম্যাচকে এর চেয়ে বেশি গুরুত্ব
+                          বাংলাদেশ দল দিয়েছিল বলে মনে হয় না।
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-           <div class="col-lg-3">
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <h3 class="text-center">Category</h3>
-                <div class="customCard shadow-sm">
-                  <div
-                    class="customCard-img-bg"
-                    style="
-                      background-image: url('assets/img/card.jpg');
-                    "
-                  >
-                    <p class="customCard-title">
-                      Using IMG tag inside a container
-                    </p>
+            <div class="col-lg-12 mt-2">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-           <div class="col-lg-3">
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <h3 class="text-center">Category</h3>
-                <div class="customCard shadow-sm">
-                  <div
-                    class="customCard-img-bg"
-                    style="
-                      background-image: url('assets/img/card.jpg');
-                    "
-                  >
-                    <p class="customCard-title">
-                      Using IMG tag inside a container
-                    </p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-lg-3">
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <h3 class="text-center">Category</h3>
-                <div class="customCard shadow-sm">
-                  <div
-                    class="customCard-img-bg"
-                    style="
-                      background-image: url('assets/img/card.jpg');
-                    "
-                  >
-                    <p class="customCard-title">
-                      Using IMG tag inside a container
-                    </p>
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card cardYSpacerNone borderNone">
+                    <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                    <div class="card-body paddingX">
+                      <p class="small">
+                        চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-12 borderBottomSm">
+              <div class="card cardYSpacerNone borderNone" style="width: 18rem">
+                <img class="card-img-top" src="assets/img/pk.jpg" alt="..." loading="lazy" />
+                <div class="card-body paddingX">
+                  <p class="text-center">
+                    চমক রেখে বাংলাদেশের বিপক্ষে স্কোয়াড ঘোষণা পাকিস্তানের
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 borderBottomSm pt-1">
+              <div class="card cardYSpacerNone borderNone">
+                <div class="card-body">
+                  <p class="small">
+                    স্টারলিংক সংযোগ কীভাবে নেবেন, ভাগাভাগি করে ব্যবহার করা
+                    যাবে কি
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 borderBottomSm pt-1">
+              <div class="card cardYSpacerNone borderNone">
+                <div class="card-body">
+                  <p class="small">
+                    সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
+                    এনেছেন?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 borderBottomSm pt-1">
+              <div class="card cardYSpacerNone borderNone">
+                <div class="card-body">
+                  <p class="small">
+                    সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
+                    এনেছেন?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-1">
+              <div class="card cardYSpacerNone borderNone">
+                <div class="card-body">
+                  <p class="small">
+                    সেই নারীকে স্ত্রী বলে দাবি নোবেলের, আদালত বললেন কাবিননামা
+                    এনেছেন?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-1 borderBottom">
+              <div class="card mb-3 borderNone">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <h6 class="small text-start">
+                      প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
+                    </h6>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-2 borderBottom">
+              <div class="card mb-3 borderNone">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <h6 class="small text-start">
+                      প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
+                    </h6>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-2 borderBottom">
+              <div class="card mb-3 borderNone">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <h6 class="small text-start">
+                      প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
+                    </h6>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="card mb-3 borderNone">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <h6 class="small text-start">
+                      প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে বাংলাদেশকে
+                    </h6>
+                  </div>
+                  <div class="col-lg-4">
+                    <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="row">
+            <div class="col-12">
+              <div class="card" style="
+                    width: 300px;
+                    height: 250px;
+                    border: none;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                  ">
+                <div class="card-body" style="padding: 0; height: 100%">
+                  <img class="img-fluid" src="assets/img/ads.gif" alt="..." loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card" style="
+                    width: 300px;
+                    height: 250px;
+                    border: none;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                  ">
+                <div class="card-body" style="padding: 0; height: 100%">
+                  <img class="img-fluid" src="assets/img/ads2.gif" alt="..." loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card" style="
+                    width: 300px;
+                    height: 250px;
+                    border: none;
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                  ">
+                <div class="card-body" style="padding: 0; height: 100%">
+                  <img class="img-fluid" src="assets/img/tdc.gif" alt="..." loading="lazy"
+                    style="width: 100%; height: 100%; object-fit: cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="container">
+      <div style="width: fit-content; margin: 0 5px">
+        <img src="assets/img/97090.gif" alt="ads" srcset="" />
+      </div>
+    </div>
+  </section>
+  <!-- top-section end -->
+  <section id="top-higher-education">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid mx-auto">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">উচ্চশিক্ষা</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    বাংলাদেশ কৃষি বিশ্ববিদ্যালয়ে স্নাতক প্রথম বর্ষে ভর্তি শুরু ২৬ মে
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">ভর্তি পরীক্ষা</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    বিসিএসের সিলেবাস থেকে ‘বাদ’ মুক্তিযুদ্ধ-বঙ্গবন্ধু, নতুন কী যুক্ত হলো?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">কর্মসংস্থান</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    সিরিজ পরাজয়কে ‘জীবনের অংশ’ বললেন লিটন
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">স্কলারশিপ</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    রিট খারিজ, মেয়র হিসেবে ইশরাককে শপথ পড়াতে বাধা নেই
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">খেলাধুলা</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    ঈদের আগে নতুন নকশায় আসছে তিন নোট, থাকছে অভ্যুত্থানের গ্রাফিতি
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h3 class="text-center d-grid">
+                <a class="btn  btn-lg category-text-button" href="#" role="button">শিক্ষা আন্দালন</a>
+              </h3>
+              <div class="customCard shadow-sm">
+                <div class="customCard-img-bg">
+                  <img src="assets/img/card.jpg" alt="..." loading="lazy" />
+                  <p class="customCard-title">
+                    ঈদের আগে নতুন নকশায় আসছে তিন নোট, থাকছে অভ্যুত্থানের গ্রাফিতি
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-      function openNav() {
-        document.getElementById("mySidepanel").classList.add("open");
-      }
+<!-- footer-section start -->
+    <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-5 gap-3">
+              <a aria-label="Logo" href="#">
+               <img src="assets/images/logo.svg" alt="Logo" height="50" loading="lazy" />
+             </a> 
+            </div>
+            <div class="col-12">
+              <h5 class="text-center"> সম্পাদক: মাহবুব রনি </h5>
+              <p class="text-center">অফিস: ১ (পঞ্চম তলা), পূর্ব তেজতুরি বাজার, তেজগাঁও, ঢাকা-১২১৫।</p>  
+              <p class="text-center">ফোন ও ইমেইল (নিউজরুম): ০১৫৭২০৯৯১০৫, ০১৭৮৫৭১৬২৭৮; news@thedailycampus.com</p>
+              <p class="text-center">ফোন ও ইমেইল (বিজ্ঞাপন): ০১৭১২৪৬৮৮৯৭; ad@thedailycampus.com</p>
+              © Copyright 2025, The Daily Campus Limited
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-12 mb-5 ">
+              
+            </div>
+            <div class="col-12">
+              <h5 class="text-center"> সম্পাদক: মাহবুব রনি </h5>
+              <p class="text-center">অফিস: ১ (পঞ্চম তলা), পূর্ব তেজতুরি বাজার, তেজগাঁও, ঢাকা-১২১৫।</p>  
+              <p class="text-center">ফোন ও ইমেইল (নিউজরুম): ০১৫৭২০৯৯১০৫, ০১৭৮৫৭১৬২৭৮; news@thedailycampus.com</p>
+              <p class="text-center">ফোন ও ইমেইল (বিজ্ঞাপন): ০১৭১২৪৬৮৮৯৭; ad@thedailycampus.com</p>
+              
+            </div>
+          </div>
+        </div>
 
-      function closeNav() {
-        document.getElementById("mySidepanel").classList.remove("open");
-      }
-    </script>
-  </body>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer-section end -->
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").classList.add("open");
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").classList.remove("open");
+    }
+  </script>
+</body>
+
 </html>

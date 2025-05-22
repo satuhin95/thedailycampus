@@ -163,10 +163,13 @@
     .color-white { color: #fff; }
     .hover-black:hover { color: #000; }
 /* top serction end */
+  
 
+  .category-text-button{background: rgb(68,114,196)!important; color:rgb(255,255,255)}    
+  .category-text-button:hover{color:rgb(255,255,255)}  
   .customCard {
-    width: 280px;
-    height: 360px;
+    width: 195px;
+    height: 300px;
     overflow: hidden;
     transition: box-shadow 0.56s ease-in-out;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -213,3 +216,9 @@
          .customCard:hover .customCard-title {
             /* color: rgba(72, 79, 73, 0.7);  */
         }
+
+        /* footer serction start  */
+
+
+
+        /* footer serction end  */
