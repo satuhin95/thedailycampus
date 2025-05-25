@@ -147,7 +147,7 @@
         .sidebarCatTitle i { margin-right: 5px; }
         .topSocialIcon a {
             margin: 0 10px;
-            color: #000;
+            color: #ffffff;
             font-size: 20px;
             text-decoration: none;
         }
@@ -256,8 +256,54 @@ a {
 /* tdc old css end */
 
 
-        /* footer serction start  */
+/* footer serction start  */
+    .desktopFooter {
+    background-color: #000000;
+    border-top: 2px solid #dddddd;
+    margin-top: 30px;
+    color: #ffffff;
+}
+.desktopFlexRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.desktopFooter .linkDivFooter {
+    text-align: left;
+    padding: 10px 0px;
+    /* border-left: 1px solid #edebeb; */
+    /* border-right: 1px solid #edebeb; */
+    margin: 0px -5px;
+}
+.desktopFooter .linkDivFooter a {
+    text-align: left;
+    padding: 10px 0px;
+    color: #ffffff;
+}
+paddingLR0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 
 
-        /* footer serction end  */
+
+.footer .footer-menu-group
+ {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-menu-group {
+    border-top: 1px solid #ffffff1f;
+    border-bottom: 1px solid #ffffff1f;
+    text-align: center;
+    padding: 10px 0px;
+}
+.footer-menu-group a {
+    font-size: 15px;
+    margin-right: 12px;
+    color: #ffffff;
+    transition: .5s;
+}
+
+ /* footer serction end  */
