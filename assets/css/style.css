@@ -238,7 +238,7 @@ a {
 }
 .vertical-bar-heavy {
   font-weight: bold;
-  border-left: 3px solid #000;
+  border-left: 12px solid #EFBD0B;
   padding-left: 8px;
 }
 .news-title h3,
@@ -254,6 +254,19 @@ a {
   color: #1e1d1d;
 }
 /* tdc old css end */
+
+/* flexslider picture start */
+
+
+
+
+
+
+
+
+
+
+/* flexslider picture start */
 
 
 /* footer serction start  */

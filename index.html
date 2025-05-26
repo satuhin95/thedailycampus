@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -1180,7 +1181,7 @@
     </div>
     <div class="container">
       <div style="width: fit-content; margin: 0 auto">
-        <!-- <img src="assets/img/97090.gif" alt="ads" srcset="" /> -->
+        <!-- <img class="img-fluid" src="assets/img/97090.gif" alt="ads" srcset="" /> -->
       </div>
     </div>
   </section>
@@ -1230,12 +1231,53 @@
                     <i class="bi bi-chevron-right d-none"></i>
                   </div>
                 </div>
-                <div class="row mt-2">
-                  <div class="col-12">
-                    <div class="card cardYSpacerNone borderNone">
-                      <img class="" src="assets/images/picture-hate.png" alt="..." loading="lazy">
+                <div class="row">
+                  
+                  <div class="col-md-12 col-12 desktopSectionLead paddingLR10">
+                      <div class="thumbnail bgUnset">
+                        <div id="carousel-example-generic" class="carousel slide customCarousel" data-ride="carousel">
+                          <div class="customProgressBar"><div class="bar borderRadius0"><div class="in borderRadius0"></div></div></div>
+                          <div class="carousel-inner borderTRadius5 positionRelative">
+                            <div class="item">
+                              <a href="#">
+                                <img class="img-responsive borderBRadius5" src="assets/images/slider1.jpg" alt="রেললাইনের ধারে ‘লালগালিচা’" title="রেললাইনের ধারে ‘লালগালিচা’">
+                                <span class="carousel-counter">১ / ৩</span></a>
+                            </div>
+                            <div class="item active">
+                              <a href="#">
+                                <img class="img-responsive borderBRadius5" src="assets/images/slider2.jpg" alt="রেললাইনের ধারে ‘লালগালিচা’" title="রেললাইনের ধারে ‘লালগালিচা’">
+                                <span class="carousel-counter">২ / ৩</span></a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <img class="img-responsive borderBRadius5" src="assets/images/slider3.jpg" alt="রেললাইনের ধারে ‘লালগালিচা’" title="রেললাইনের ধারে ‘লালগালিচা’">
+                                <span class="carousel-counter">৩ / ৩</span></a>
+                            </div>
+                            </div>
+
+                          <!-- Controls -->
+                          <span class="customCarouselPauseButton"><i class="fa fa-pause"></i></span>
+                          <span class="customCarouselPlayButton" style="display: none;"><i class="fa fa-play"></i></span>
+
+                          <a class="left carousel-control bgImageNone leftControl" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left photoGalleryPrevButton" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control bgImageNone bgImgUnset" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right photoGalleryNextButton" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                        <div class="caption">
+                          <h3 class="title10 marginB0"><a class="colorBlack hoverBlue" href="#">রেললাইনের ধারে ‘লালগালিচা’</a></h3>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+
+
+
+
+                 
                   <div class="col-12 mt-2 borderBottom">
                     <div class="card mb-3 borderNone">
                       <div class="row">
@@ -1260,7 +1302,6 @@
   <!-- footer-section start -->
   <section class="desktopFooter hidden-xs hidden-print">
     <div class="container">
-
       <div class="row desktopFlexRow">
         <div class="col-lg-5">
           <div class="row justify-content-center">
@@ -1279,63 +1320,50 @@
           <div class="row justify-content-center">
             <div class="col-12 mb-5 pt-5 gap-3">
               <div class="followDiv h100P">
-							<p class="marginB0 title11 marginT10">অনুসরণ করুন</p>
-							<div class="topSocialIcon">
-								<a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank" class="fa fa-brands fa-facebook borderRadius0"></a>
-                <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank" class="fa fa-brands fa-instagram borderRadius0"></a>
-								<a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank" class="fa fa-brands fa-x-twitter borderRadius0"></a>
-								
-								<a aria-label="Youtube" href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank" class="fa fa-brands fa-youtube borderRadius0"></a>
-                <a href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA" target="_blank">
-                                    <img width="24" height="24" src="https://files.thedailycampus.com/img/default/Gnews.png" alt="Gnews.png">
-                </a>
-                <a target="_blank" href="https://t.me/dailycampus">
-                             <img width="24" height="24" src="https://files.thedailycampus.com/img/default/telegram.png" alt="telegram.png">
-                        </a>
-							</div>
-						</div>
+							  <p class="marginB0 title11 marginT10">অনুসরণ করুন</p>
+                <div class="topSocialIcon">
+                    <a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank" class="fa fa-brands fa-facebook borderRadius0"></a>
+                    <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank" class="fa fa-brands fa-instagram borderRadius0"></a>
+                    <a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank" class="fa fa-brands fa-x-twitter borderRadius0"></a>
+                    <a aria-label="Youtube" href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank" class="fa fa-brands fa-youtube borderRadius0"></a>
+                    <a href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA" target="_blank"><img width="24" height="24" src="https://files.thedailycampus.com/img/default/Gnews.png" alt="Gnews.png"></a>
+                    <a target="_blank" href="https://t.me/dailycampus"><img width="24" height="24" src="https://files.thedailycampus.com/img/default/telegram.png" alt="telegram.png"></a>
+                </div>
+						  </div>
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-12 mb-5 pt-5 gap-3">
-                <div class="footerBottom paddingT0 paddingB0">
-                  <div class="linkDivFooter paddingLR0">
-                    <a class="hoverBlue" aria-label="About" href="https://www.jugantor.com/about">আমাদের সম্পর্কে</a>
-                    <a class="hoverBlue" aria-label="Contact" href="https://www.jugantor.com/contact">যোগাযোগ</a>
-                    <a class="hoverBlue" aria-label="Terms" href="https://www.jugantor.com/terms">ব্যবহারের শর্তাবলি</a>
-                    <a class="hoverBlue" aria-label="Privacy" href="https://www.jugantor.com/privacy-policy">গোপনীয়তার নীতি</a>
-                    <a class="hoverBlue" aria-label="Rate Card" href="https://www.jugantor.com/advertisement">বিজ্ঞাপন</a>
-                  </div>
-						</div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-12 mb-2 pt-5 gap-3">
           <div class="footer-menu-group">
-            <a href="https://www.rupalibangladesh.com/about-us">আমাদের সম্পর্কে</a>
-            <a href="https://www.rupalibangladesh.com/privacy-policy">গোপনীয়তার নীতি</a>
-            <a href="https://www.rupalibangladesh.com/terms-of-use">ব্যবহারের শর্তাবলী</a>
-            <a href="https://www.rupalibangladesh.com/unicode-converter" target="_blank">বাংলা কনভার্টার</a>
-            <!-- <a href="#">বিজ্ঞাপন</a> -->
-            <a href="https://www.rupalibangladesh.com/contact">যোগাযোগ</a>
-            <a href="https://www.rupalibangladesh.com/জাতীয়-ও-আন্তর্জাতিক-দিবস-উদযাপন">জাতীয়  দিবস</a>
-            <a href="https://www.rupalibangladesh.com/সরকারি-ছুটির-তালিকা-2025">সরকারি ছুটির তালিকা</a>
-            <a href="https://www.rupalibangladesh.com/আজকের-নামাজ-সেহরি-ইফতারের-সময়">নামাজের সময়সূচি</a>
+            <a href="#about-us" target="_blank">আমাদের সম্পর্কে</a>
+            <a href="#contact" target="_blank">যোগাযোগ</a>
+            <a href="#terms-and-conditions" target="_blank">নীতিমালা ও শর্তাবলি </a>
+            <a href="#privacy-policy" target="_blank">গোপনীয়তার নীতি</a>
+            <a href="#ads" target="_blank">বিজ্ঞাপন</a>
+            <a href="#jobs" target="_blank">চাকরি</a>
+            <a href="#" target="_blank">নাগরিক সাংবাদিকতা</a>
+            <a href="#জাতীয়-ও-আন্তর্জাতিক-দিবস-উদযাপন" target="_blank">জাতীয়  দিবস</a>
+            <a href="#সরকারি-ছুটির-তালিকা-2025" target="_blank">সরকারি ছুটির তালিকা</a>
+            <a href="#আজকের-নামাজ-সেহরি-ইফতারের-সময়" target="_blank">নামাজের সময়সূচি</a>
+            <a href="#unicode-converter" target="_blank">বাংলা কনভার্টার</a>
+         </div>
         </div>
-
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-12 col-12"></div>
+          <div class="footer-menu-group">
+            <p class="text-center">স্বত্ব © ২০১৮-২০২৫, দ্য ডেইলি ক্যাম্পাস </p>
+         </div>
         </div>
       </div>
     </div>
-
   </section>
   <!-- footer-section end -->
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script defer src="assets/js/jquery.flexslider.js"></script>
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -1348,6 +1376,27 @@
     function closeNav() {
       document.getElementById("mySidepanel").classList.remove("open");
     }
+  </script>
+
+  <script>
+$(window).on('load', function(){
+				$('.flexslider').flexslider({
+					controlNav: false,
+					animation: "slide",
+					animationLoop: false,
+					directionNav: true,
+					itemWidth: 320,
+					itemMargin: 20,
+					pausePlay: true,
+					nextText: "",
+					prevText: "",
+					start: function(slider){
+						$('body').removeClass('loading');
+					}
+				});
+			});
+
+
   </script>
 </body>
 
