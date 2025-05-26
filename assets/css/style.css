@@ -1,3 +1,54 @@
+@font-face {
+    font-family: SolaimanLipi;
+    src: url(assets/fonts/SolaimanLipiNormal.eot);
+    src: local("SolaimanLipi"), local("SolaimanLipi"), url(assets/fonts/SolaimanLipiNormal.eot?#iefix) format("embedded-opentype"), url(assets/fonts/SolaimanLipiNormal.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    line-height: 1.42857143;
+    color: #3e4d5c;
+    direction: ltr;
+    font: 400 19px SolaimanLipi,serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+}
+.primaryBg {
+  background: #000000 !important;
+}
+.secondaryBg {
+  background: #808080 !important;
+}
+
+.primaryColor {
+  color: #000000 !important;
+}
+.secondaryColor {
+  color: #808080 !important;
+}
+.redColor {
+  color: #e30c0c !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#navbarNav {
+    font: 16px solaimanLipi,sans-serif;
+    /* margin: 0 10px 0 0;
+    padding: 0; */
+    /* float: left; */
+    text-transform: uppercase;
+}
+
+
 .borderBottomSm {
   position: relative; 
 }
@@ -320,3 +371,66 @@ paddingLR0 {
 }
 
  /* footer serction end  */
+ /* tdc slider  start */
+         .carousel-counter {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .carousel-pause, .carousel-play {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+        }
+        .carousel-pause:hover, .carousel-play:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+            bottom: 0rem;
+            left: 0rem;
+            right: 0rem;
+        }
+        .card-caption {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .card:hover .card-caption {
+            background-color: rgba(255, 255, 255, 1);
+            color: #005566;
+        }
+        .custom-progress-bar {
+            height: 5px;
+            top: 5px;
+            z-index: 10;
+            background-color: #e0e0e0;
+            width: 100%;
+            position: relative;
+        }
+        .custom-progress-bar .bar {
+            height: 100%;
+            background-color: #EFBD0B;
+            width: 0;
+            animation: progress 5s linear infinite;
+            animation-play-state: running;
+        }
+        .custom-progress-bar.paused .bar {
+            animation-play-state: paused;
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+        }
+        @keyframes progress {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+ /* tdc slider  end */
