@@ -1,7 +1,7 @@
 @font-face {
     font-family: SolaimanLipi;
-    src: url(assets/fonts/SolaimanLipiNormal.eot);
-    src: local("SolaimanLipi"), local("SolaimanLipi"), url(assets/fonts/SolaimanLipiNormal.eot?#iefix) format("embedded-opentype"), url(assets/fonts/SolaimanLipiNormal.woff) format("woff");
+    src: url(../fonts/SolaimanLipiNormal.eot);
+    src: local("SolaimanLipi"), local("SolaimanLipi"), url(../fonts/SolaimanLipiNormal.eot?#iefix) format("embedded-opentype"), url(../fonts/SolaimanLipiNormal.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -202,8 +202,9 @@ body {
             font-size: 20px;
             text-decoration: none;
         }
-        @media (min-width: 576px) {
+        @media (mix-width: 576px) {
             .mobileHeader, .sidepanel { display: none !important; }
+
         }
 /* mobile menu end */
 
@@ -228,7 +229,7 @@ body {
 /* top serction end */
   
 
-  .category-text-button{background: rgb(68,114,196)!important; color:rgb(255,255,255)}    
+  .category-text-button{background: #EFBD0B!important; color:rgb(255,255,255)}    
   .category-text-button:hover{color:rgb(255,255,255)}  
   .customCard {
     width: 195px;
@@ -276,6 +277,23 @@ body {
             font-weight: 600;
             z-index: 2;
         }
+
+        .card-bag {
+          background-image: url(../img/nature.jpg);
+          height: 300px;
+          background-size: 100% 100%;
+          color: #ffffff;
+        }
+
+        @media (min-width: 576px) {
+            .category-customCard { 
+              width: 100% !important; 
+              height: auto; 
+              margin-bottom: 25px; 
+              overflow: hidden; 
+            }
+          }
+
          .customCard:hover .customCard-title {
             /* color: rgba(72, 79, 73, 0.7);  */
         }
