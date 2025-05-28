@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="preload"
+      href="assets/fonts/SolaimanLipiNormal.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/flexslider.css"
+      type="text/css"
+      media="screen"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=68356a74a7cb4a0019841a7b&product=inline-share-buttons&source=platform"
+      async="async"
+    ></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <!-- Pre Header Section start -->
+      <div class="d-none d-md-block">
+        <div class="container bg-white mt-3">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="d-flex align-items-center">
+                <span
+                  class="cursor-pointer me-2"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#sidebarMenu"
+                  aria-controls="sidebarMenu"
+                >
+                  <i class="bi bi-list fs-5 text-dark"></i>
+                </span>
+                <span class="today-date">মঙ্গলবার, ২০ মে ২০২৫</span>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <a aria-label="Logo" href="#">
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Logo"
+                  height="50"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <div class="d-flex justify-content-end align-items-center">
+                <a
+                  class="btn btn-outline-dark btn-sm me-2"
+                  href="#"
+                  target="_blank"
+                  >English</a
+                >
+                <div class="d-flex">
+                  <a
+                    aria-label="Facebook"
+                    href="#"
+                    target="_blank"
+                    class="text-dark me-2"
+                  >
+                    <i class="bi bi-facebook fs-5"></i>
+                  </a>
+                  <a
+                    aria-label="Twitter"
+                    href="#"
+                    target="_blank"
+                    class="text-dark me-2"
+                  >
+                    <i class="bi bi-twitter-x fs-5"></i>
+                  </a>
+                  <a
+                    aria-label="Linkedin"
+                    href="#"
+                    target="_blank"
+                    class="text-dark me-2"
+                  >
+                    <i class="bi bi-linkedin fs-5"></i>
+                  </a>
+                  <a
+                    aria-label="Instagram"
+                    href="#"
+                    target="_blank"
+                    class="text-dark me-2"
+                  >
+                    <i class="bi bi-instagram fs-5"></i>
+                  </a>
+                  <a
+                    aria-label="Youtube"
+                    href="#"
+                    target="_blank"
+                    class="text-dark"
+                  >
+                    <i class="bi bi-youtube fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav id="navbar_top" class="navbar navbar-expand-lg bg-white shadow-sm">
+          <div class="container">
+            <div class="row w-100 align-items-center">
+              <div class="col-lg-1">
+                <div class="stickyLogo mb-1">
+                  <a aria-label="Logo" href="#">
+                    <img src="assets/images/logo.svg" alt="Logo" height="45" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-10">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#latest">সর্বশেষ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#national">শিক্ষাঙ্গন</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#politics">উচ্চশিক্ষা</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#economics">শিক্ষা প্রশাসন</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international"
+                        >ভর্তি পরীক্ষা</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international">কর্মসংস্থান</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international">স্কলারশিপ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international">খেলাধুলা</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international">জাতীয়</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#international">ভিডিও স্টোরি</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#country-news" id="countryDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      সারাদেশ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#location">জেলার খবর</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#sports">ফ্যাক্টচেক</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="moreDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        আরও
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end scrollable-dropdown"
+                        aria-labelledby="moreDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">তারুণ্য</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">একাডেমিক পরীক্ষা</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">শিক্ষা আন্দোলন</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">আন্তর্জাতিক</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">উদ্ভাবন</a></li>
+                        <li><a class="dropdown-item" href="#">বিদেশ</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">বই ও গ্রন্থাগার</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >অর্থনীতি ও ব্যবসা</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >বিজ্ঞান ও প্রযুক্তি</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">ধর্ম ও নৈতিকতা</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >বিনোদন ও সংস্কৃতি</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">আবহাওয়া ও পরিবেশ</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-1 text-end">
+                <a href="#" class="text-dark">
+                  <i class="bi bi-search fs-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Offcanvas Menu for Mobile and Mega Menu -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="sidebarMenu"
+          aria-labelledby="sidebarMenuLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">মেনু</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#">সর্বশেষ</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">শিক্ষাঙ্গন</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">উচ্চশিক্ষা</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">শিক্ষা প্রশাসন</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ভর্তি পরীক্ষা</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">কর্মসংস্থান</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">স্কলারশিপ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">খেলাধুলা</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ভিডিও স্টোরি</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ফ্যাক্টচেক</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">তারুণ্য</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">একাডেমিক পরীক্ষা</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">শিক্ষা আন্দোলন</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">উদ্ভাবন</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">বিদেশ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">বই ও গ্রন্থাগার</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">অর্থনীতি ও ব্যবসা</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">বিজ্ঞান ও প্রযুক্তি</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ধর্ম ও নৈতিকতা</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">বিনোদন ও সংস্কৃতি</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">আবহাওয়া ও পরিবেশ</a>
+              </li>
+            </ul>
+            <hr />
+            <div class="d-flex flex-wrap">
+              <a class="btn btn-info me-2 mb-2" href="#"
+                ><i class="bi bi-grid"></i> সব বিভাগ</a
+              >
+              <a class="btn btn-outline-dark me-2 mb-2" href="#"
+                ><i class="bi bi-film"></i> ভিডিও</a
+              >
+
+              <a class="btn btn-outline-dark me-2 mb-2" href="#" target="_blank"
+                ><i class="bi bi-megaphone"></i> বিজ্ঞাপন</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pre Header Section End -->
+      <!-- Mobile Header -->
+      <div class="container mobileHeader d-block d-sm-none bg-light">
+        <div class="row align-items-center">
+          <div class="col-2">
+            <div class="text-end marginT8">
+              <span onclick="openNav()"
+                ><i class="fa fa-bars sidebarIcon colorBlack"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="marginT2 text-start">
+              <a aria-label="Logo" href="#">
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Logo"
+                  height="35"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text-end marginT4">
+              <a
+                class="mobileHeaderOtherSite colorBlack"
+                aria-label="English"
+                href="#"
+                target="_blank"
+                >English</a
+              >
+              <a
+                class="mobileHeaderOtherSite text-center"
+                aria-label="Search"
+                href="#"
+              >
+                <span
+                  ><i class="fa fa-magnifying-glass searchIcon colorBlack"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar Menu -->
+      <div id="mySidepanel" class="sidepanel d-block d-sm-none">
+        <div class="container borderC1B1">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <div class="paddingT5 paddingB5 marginT5">
+                <a aria-label="Logo" href="#">
+                  <img
+                    src="assets/images/logo.svg"
+                    alt="Logo"
+                    height="35"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="text-end marginT10">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >×</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 paddingLR5">
+              <div
+                class="borderC1-1 borderRadius5 marginT15 marginB15 paddingLR20 paddingT10 paddingB10"
+              >
+                <form method="get" action="#">
+                  <input type="hidden" name="search" value="yes" />
+                  <div class="row g-2">
+                    <div class="col-10">
+                      <input
+                        type="text"
+                        name="headline"
+                        class="form-control"
+                        placeholder="এখানে খুঁজুন..."
+                      />
+                    </div>
+                    <div class="col-2">
+                      <button
+                        type="submit"
+                        class="btn btn-block bg-black colorWhite"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <a class="sidebarCatTitle" aria-label="প্রচ্ছদ" href="#"
+                ><i class="fa fa-caret-right"></i> প্রচ্ছদ</a
+              >
+            </div>
+            <div class="col-6">
+              <a class="sidebarCatTitle" aria-label="সর্বশেষ" href="#/latest"
+                ><i class="fa fa-caret-right"></i> সর্বশেষ</a
+              >
+            </div>
+            <div class="loadMenubarCategories"></div>
+            <div class="col-6">
+              <a
+                class="sidebarCatTitle"
+                aria-label="সব বিভাগ"
+                href="#/categories"
+                ><i class="fa fa-caret-right"></i> সব বিভাগ</a
+              >
+            </div>
+            <div class="col-6">
+              <a class="sidebarCatTitle" aria-label="আর্কাইভ" href="#/archive"
+                ><i class="fa fa-caret-right"></i> আর্কাইভ</a
+              >
+            </div>
+
+            <div class="col-6">
+              <a
+                class="sidebarCatTitle"
+                aria-label="বিজ্ঞাপন"
+                href="#/advertisement"
+                target="_blank"
+                ><i class="fa fa-caret-right"></i> বিজ্ঞাপন</a
+              >
+            </div>
+
+            <div class="col-12 marginT20">
+              <div
+                class="topSocialIcon text-center borderC1T1 borderC1B1 padding10"
+              >
+                <a
+                  aria-label="Facebook"
+                  href="#"
+                  target="_blank"
+                  class="fa-brands fa-facebook"
+                ></a>
+                <a
+                  aria-label="Twitter"
+                  href="#"
+                  target="_blank"
+                  class="fa-brands fa-x-twitter"
+                ></a>
+                <a
+                  aria-label="Linkedin"
+                  href="#"
+                  target="_blank"
+                  class="fa-brands fa-linkedin"
+                ></a>
+                <a
+                  aria-label="Instagram"
+                  href="#"
+                  target="_blank"
+                  class="fa-brands fa-instagram"
+                ></a>
+                <a
+                  aria-label="Youtube"
+                  href="#"
+                  target="_blank"
+                  class="fa-brands fa-youtube"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="article-top">
+      <div class="container-fluid">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="category-name">
+                <h4 class="my-3">
+                  <a class="text" href="#">ফুটবল</a>
+                </h4>
+              </div>
+
+              <article>
+                <div class="news-headline">
+                  <h1 class="fs-1 fw-bolder">
+                    টিকিট বিক্রির ‘ডিজিটাল স্বাদ’ নিতে গিয়ে লেজেগোবরে বাফুফে
+                  </h1>
+                </div>
+
+                <div class="news-reporter">
+                  <span class="fs-6 fw-bolder"> ক্রীড়া প্রতিবেদক</span>
+                  <span class="font-size-14">ঢাকা</span>
+                </div>
+
+                <div class="row my-4 pb-md-2 border-bottom">
+                  <div class="col-md-6 mb-2">
+                    <span class="fs-6">প্রকাশ: ২৭ মে ২০২৫, ১২:১২</span>
+                  </div>
+                  <div class="col-md-6 mb-2 text-end">
+                    <!-- Social share buttons can be added here -->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <div class="image borderBottom mb-3">
+                      <figure class="feature-image mb-2 text-center">
+                        <img
+                          class="img-fluid border"
+                          src="assets/img/football.jpg"
+                          alt="Football Match Photo"
+                          loading="lazy"
+                        />
+                        <figcaption class="figure-caption text-center">
+                          তাবিথ আউয়াল &nbsp; ©
+                          <span class="cursor-pointer">সংগ্রহীত</span>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <div class="news-content container">
+                      <p class="text-justify mb-3">
+                        আগামী ১০ জুন ঘরের মাঠে এশিয়ান কাপ বাছাইপর্বে সিঙ্গাপুরের
+                        বিপক্ষে খেলবে বাংলাদেশ। জাতীয় স্টেডিয়ামের গ্যালরিতে বসে
+                        এই ম্যাচ দেখতে আগ্রহ তুঙ্গে ফুটবলপ্রেমীদের।
+                      </p>
+                      <p class="text-justify mb-3">
+                        সোমবার (২৬ মে) পল্টন ময়দানে বাংলাদেশ স্পোর্টস
+                        জার্নালিস্টস অ্যাসোসিয়েশনের কুল-মিডিয়া কাপ ফুটবল
+                        টুর্নামেন্ট উদ্বোধনের পর হাইভোল্টেজ এই ম্যাচের টিকিট
+                        নিয়ে সাংবাদিকদের সঙ্গে কথা বলেন বাফুফে সভাপতি তাবিথ
+                        আউয়াল।
+                      </p>
+                      <p class="text-justify mb-3">
+                        গত ২৪ মে রাত ৮টার পর এই ম্যাচের টিকিট বিক্রির কার্যক্রম
+                        শুরু করেছিল বাফুফের টিকিটিং পার্টনার টিকিফাই। কিন্তু
+                        ঘণ্টা তিনেকের মধ্যে সাইবার আক্রমণের শিকার হয়ে টিকিট
+                        বিক্রির কার্যক্রম আপাতত স্থগিত ঘোষণা করে বাফুফে। তবে আজ
+                        রাত ১০টা থেকে ফের টিকিট বিক্রি শুরুর আশা বাফুফের।
+                      </p>
+
+                      <!-- In-article ad -->
+                      <div
+                        class="d-flex justify-content-center mx-auto my-2 inarticle_ad"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/img/tdc.gif"
+                          alt="Advertisement"
+                          loading="lazy"
+                          style="width: 100%; height: 100%; object-fit: cover"
+                        />
+                      </div>
+
+                      <p class="text-justify mb-3">
+                        এ প্রসঙ্গে তাবিথ আউয়াল বলেন, ‘বাফুফে সব সময় ইনোভেটিভ কাজ
+                        করে থাকে। প্রথমবার ভুল-ত্রুটি হতে পারে। এটা স্বীকার করে
+                        নিয়েছি। দুটি-একটি আইপি অ্যাড্রেস থেকে সাইবার আক্রমণ
+                        হয়েছে। এজন্য সাইবার ডাউন ছিল। টিকিট সংগ্রহ পর্যায় থেকে
+                        স্টেডিয়ামে প্রবেশ পর্যন্ত আমরা নজরদারি রাখব। ১০ জুন
+                        ম্যাচ এখনো অনেক সময় আছে। আমরা একটু সময় নিয়ে পুনরায় শুরু
+                        করছি। আশাবাদী আজ আবার রাত ১০টা থেকে সাইট ও প্ল্যাটফর্ম
+                        অন হবে সীমিত পরিসর হলেও।’
+                      </p>
+                      <p class="text-justify mb-3">
+                        জাতীয় স্টেডিয়ামে সাধারণ গ্যালারির আসন সংখ্যা ১৮ হাজার
+                        ৩০০। আর ক্লাব হাউজ ও ভিআইপি মিলিয়ে আরও হাজার চারেক। ফলে,
+                        মাত্র ২২ হাজার আসন ক্ষমতার স্টেডিয়ামে চাহিদা অসীম।
+                      </p>
+
+                      <!-- Related news -->
+                      <aside class="related-news">
+                        <div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-9">
+                              <div class="card-body py-2">
+                                <h6 class="fw-bold text-start mb-0">
+                                  <a
+                                    href="#"
+                                    class="text-decoration-none text-dark"
+                                  >
+                                    প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                    বাংলাদেশকে
+                                  </a>
+                                </h6>
+                                <span>২৬ মে ২০২৫</span>
+                              </div>
+                            </div>
+                            <div class="col-3 d-flex align-items-center">
+                              <img
+                                class="img-thumbnail w-100"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </aside>
+
+                      <p class="text-justify mb-3">
+                        এ নিয়ে বাফুফে সভাপতির ভাষ্য, ‘স্টেডিয়াম গ্যালারি ১৮
+                        হাজার এর বাইরে হাজার দু’য়েক। দুভার্গ্যজনক হলেও বাস্তবতা
+                        অনেক সমর্থকই সীমিত আসনের জন্য স্টেডিয়ামের বাইরে থাকতে
+                        হবে। তাদের জন্য আমরা বাইরে ব্যবস্থা করব। বাফুফের পক্ষ
+                        থেকে ৮টি বিভাগীয় শহরে ফ্যান জোন করা হচ্ছে। অনেকে ব্যক্তি
+                        উদ্যোগেও করছে।’
+                      </p>
+
+                      <!-- Another in-article ad -->
+                      <div
+                        class="d-flex justify-content-center mx-auto my-2 inarticle_ad"
+                      >
+                        <img
+                          class="img-fluid"
+                          src="assets/img/tdc.gif"
+                          alt="Advertisement"
+                          loading="lazy"
+                          style="width: 100%; height: 100%; object-fit: cover"
+                        />
+                      </div>
+
+                      <p class="text-justify mb-3">
+                        এএফসি বাছাইয়ে প্রতি গ্রুপের চ্যাম্পিয়ন মূলপর্বে খেলতে
+                        পারবে। বাংলাদেশের গ্রুপে ভারত, সিঙ্গাপুর ও হংকং ৪ দলেরই
+                        সমান এক পয়েন্ট এবং গোল ব্যবধানও শূন্য। এজন্য ১০ জুনের
+                        ম্যাচটি গুরুত্বপূর্ণ মনে করছেন বাফুফে সভাপতি। তার মতে,
+                        ‘আমি আশাবাদী এখনো গ্রুপ চ্যাম্পিয়ন হওয়ার ব্যাপারে।
+                        আমাদের গ্রুপটি বেশ টাফেস্ট। প্রতি দলেরই এক পয়েন্ট ও গোলও
+                        শূন্য। সিঙ্গাপুর ম্যাচের পর টেবিলের অবস্থান নিশ্চয়ই
+                        বদলাবে। আমি সিঙ্গাপুর ম্যাচ নিয়ে আশাবাদী।’
+                      </p>
+                      <!-- Related news -->
+                      <aside class="related-news">
+                        <div class="card mb-3">
+                          <div class="row g-0">
+                            <div class="col-9">
+                              <div class="card-body py-2">
+                                <h6 class="fw-bold text-start mb-0">
+                                  <a
+                                    href="#"
+                                    class="text-decoration-none text-dark"
+                                  >
+                                    প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                    বাংলাদেশকে
+                                  </a>
+                                </h6>
+                                <span>২৬ মে ২০২৫</span>
+                              </div>
+                            </div>
+                            <div class="col-3 d-flex align-items-center">
+                              <img
+                                class="img-thumbnail w-100"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </aside>
+
+                      <!-- Google News follow -->
+                      <div
+                        class="d-flex fs-6 align-items-center tdc_google_news my-4 pb-md-3"
+                      >
+                        <a
+                          href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="fw-bold fs-6"
+                        >
+                          <img
+                            width="26"
+                            height="24"
+                            src="https://files.thedailycampus.com/img/default/Gnews.png"
+                            alt="Google News icon"
+                            class="img-fluid me-2"
+                          />
+                          The Daily Campus এর খবর পেতে গুগল নিউজ চ্যানেল ফলো
+                          করুন
+                        </a>
+                      </div>
+                      <div class="col-12">
+                        <div class="category-name">
+                          <h4 class="my-3">
+                            <a class="text" href="#">ফুটবল</a>
+                            <span class="fw-medium"> থেকে আরও পড়ুন </span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="col-12 tags">
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 m-0">
+                          <li>
+                            <a
+                              href="#"
+                              class="btn btn-light text-primary fs-6 text-decoration-none"
+                              >বাফুফে</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="btn btn-light text-primary fs-6 text-decoration-none"
+                              >বাফুফে</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="card"
+                    style="
+                      width: 300px;
+                      height: 250px;
+                      border: none;
+                      margin-top: 2px;
+                      margin-bottom: 2px;
+                    "
+                  >
+                    <div class="card-body" style="padding: 0; height: 100%">
+                      <img
+                        class="img-fluid"
+                        src="assets/img/ads.gif"
+                        alt="..."
+                        loading="lazy"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="card"
+                    style="
+                      width: 300px;
+                      height: 250px;
+                      border: none;
+                      margin-top: 2px;
+                      margin-bottom: 2px;
+                    "
+                  >
+                    <div class="card-body" style="padding: 0; height: 100%">
+                      <img
+                        class="img-fluid"
+                        src="assets/img/ads2.gif"
+                        alt="..."
+                        loading="lazy"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <h6 class="fw-bold text-start my-2 pt-3 custom-underline">
+                    <a href="#" class="text-decoration-none text-dark">
+                      বাফুফে নিয়ে আরও পড়ুন
+                    </a>
+                  </h6>
+                  <div class="related-news">
+                    <div class="card border-0 my-3">
+                      <div class="row g-0">
+                        <div class="col-12">
+                          <div class="py-2">
+                            <h6 class="fw-bold text-start mb-0">
+                              <a
+                                href="#"
+                                class="text-decoration-none text-dark"
+                              >
+                                প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                বাংলাদেশকে
+                              </a>
+                            </h6>
+                          </div>
+                        </div>
+                        <div class="col-12 borderBottom">
+                          <div class="mb-2 d-flex justify-content-between">
+                            <div>
+                              <span class="text-muted fs-6 text-start"
+                                >১৪ ঘণ্টা আগে</span
+                              >
+                            </div>
+                            <div>
+                              <img
+                                class="rounded-1 img-fluid"
+                                style="max-width: 100px"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-news">
+                    <div class="card border-0 my-3">
+                      <div class="row g-0">
+                        <div class="col-12">
+                          <div class="py-2">
+                            <h6 class="fw-bold text-start mb-0">
+                              <a
+                                href="#"
+                                class="text-decoration-none text-dark"
+                              >
+                                প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                বাংলাদেশকে
+                              </a>
+                            </h6>
+                          </div>
+                        </div>
+                        <div class="col-12 borderBottom">
+                          <div class="mb-2 d-flex justify-content-between">
+                            <div>
+                              <span class="text-muted fs-6 text-start"
+                                >১৪ ঘণ্টা আগে</span
+                              >
+                            </div>
+                            <div>
+                              <img
+                                class="rounded-1 img-fluid"
+                                style="max-width: 100px"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="card"
+                    style="
+                      width: 300px;
+                      height: 250px;
+                      border: none;
+                      margin-top: 2px;
+                      margin-bottom: 2px;
+                    "
+                  >
+                    <div class="card-body" style="padding: 0; height: 100%">
+                      <img
+                        class="img-fluid"
+                        src="assets/img/tdc.gif"
+                        alt="..."
+                        loading="lazy"
+                        style="width: 100%; height: 100%; object-fit: cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="related-news">
+                    <div class="card border-0 my-3">
+                      <div class="row g-0">
+                        <div class="col-12">
+                          <div class="py-2">
+                            <h6 class="fw-bold text-start mb-0">
+                              <a
+                                href="#"
+                                class="text-decoration-none text-dark"
+                              >
+                                প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                বাংলাদেশকে
+                              </a>
+                            </h6>
+                          </div>
+                        </div>
+                        <div class="col-12 borderBottom">
+                          <div class="mb-2 d-flex justify-content-between">
+                            <div>
+                              <span class="text-muted fs-6 text-start"
+                                >১৪ ঘণ্টা আগে</span
+                              >
+                            </div>
+                            <div>
+                              <img
+                                class="rounded-1 img-fluid"
+                                style="max-width: 100px"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-news">
+                    <div class="card border-0 my-3">
+                      <div class="row g-0">
+                        <div class="col-12">
+                          <div class="py-2">
+                            <h6 class="fw-bold text-start mb-0">
+                              <a
+                                href="#"
+                                class="text-decoration-none text-dark"
+                              >
+                                প্রস্তুতির সিরিজেও এখন ‘ফাইনাল’ খেলতে হচ্ছে
+                                বাংলাদেশকে
+                              </a>
+                            </h6>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="mb-2 d-flex justify-content-between">
+                            <div>
+                              <span class="text-muted fs-6 text-start"
+                                >১৪ ঘণ্টা আগে</span
+                              >
+                            </div>
+                            <div>
+                              <img
+                                class="rounded-1 img-fluid"
+                                style="max-width: 100px"
+                                src="assets/img/small.jpg"
+                                alt="Related news thumbnail"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ads area start  -->
+    <div class="container">
+      <div style="width: fit-content; margin: 0 auto">
+        <img class="img-fluid" src="assets/img/97090.gif" alt="ads" srcset="" />
+      </div>
+    </div>
+    <!-- ads area end -->
+    <!-- latest news start  -->
+    <section id="latest-news">
+      <div class="container-fluid mt-4">
+        <div class="container borderBottom pb-2 mb-4">
+          <div class="portlet-title mb-2">
+            <div class="caption">
+              <h5 href="#">
+                <span class="caption-subject vertical-bar-heavy"
+                  >সর্বশেষ সংবাদ
+                </span>
+              </h5>
+              <i class="bi bi-chevron-right d-none"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="card cardYSpacerNone borderNone">
+                <img
+                  class=""
+                  src="assets/img/school.jpg"
+                  alt="..."
+                  loading="lazy"
+                />
+                <div class="card-body paddingX">
+                  <h5 class="text-md-center mt-1 px-1">
+                    <a href="#">
+                      ১০ সরকারি স্কুল-কলেজ নির্মাণে ধীরগতি, ৬ বছরেও শেষ হয়নি
+                      মাটি ভরাট
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-6 col-md-3">
+              <div class="card cardYSpacerNone borderNone">
+                <img
+                  class=""
+                  src="assets/img/school.jpg"
+                  alt="..."
+                  loading="lazy"
+                />
+                <div class="card-body paddingX">
+                  <h5 class="text-center mt-1 px-1">
+                    <a href="#">
+                      ১০ সরকারি স্কুল-কলেজ নির্মাণে ধীরগতি, ৬ বছরেও শেষ হয়নি
+                      মাটি ভরাট
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-6 col-md-3">
+              <div class="card cardYSpacerNone borderNone">
+                <img
+                  class=""
+                  src="assets/img/school.jpg"
+                  alt="..."
+                  loading="lazy"
+                />
+                <div class="card-body paddingX">
+                  <h5 class="text-center mt-1 px-1">
+                    <a href="#">
+                      ১০ সরকারি স্কুল-কলেজ নির্মাণে ধীরগতি, ৬ বছরেও শেষ হয়নি
+                      মাটি ভরাট
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+             <div class="col-6 col-md-3">
+              <div class="card cardYSpacerNone borderNone">
+                <img
+                  class=""
+                  src="assets/img/school.jpg"
+                  alt="..."
+                  loading="lazy"
+                />
+                <div class="card-body paddingX">
+                  <h5 class="text-center mt-1 px-1">
+                    <a href="#">
+                      ১০ সরকারি স্কুল-কলেজ নির্মাণে ধীরগতি, ৬ বছরেও শেষ হয়নি
+                      মাটি ভরাট
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+    <!-- latest news end -->
+
+    <!-- footer-section start -->
+    <section class="desktopFooter hidden-xs hidden-print">
+      <div class="container">
+        <div class="row desktopFlexRow">
+          <div class="col-lg-5">
+            <div class="row justify-content-center">
+              <div class="col-12 mb-5 pt-5 gap-3">
+                <a aria-label="Logo" href="#">
+                  <img
+                    src="assets/img/TDC.svg"
+                    alt="Logo"
+                    height="50"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div class="col-12">
+                <h5 class="text-start">সম্পাদক: মাহবুব রনি</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-5">
+            <div class="row justify-content-center">
+              <div class="col-12 mb-5 pt-5 gap-3">
+                <div class="followDiv h100P">
+                  <p class="marginB0 title11 marginT10">অনুসরণ করুন</p>
+                  <div class="topSocialIcon">
+                    <a
+                      aria-label="Facebook"
+                      href="https://www.facebook.com/thedailycampusoriginal/"
+                      target="_blank"
+                      class="fa fa-brands fa-facebook borderRadius0"
+                    ></a>
+                    <a
+                      aria-label="Instagram"
+                      href="https://www.instagram.com/thedailycampusbd/"
+                      target="_blank"
+                      class="fa fa-brands fa-instagram borderRadius0"
+                    ></a>
+                    <a
+                      aria-label="Twitter"
+                      href="https://twitter.com/thedailycampus2"
+                      target="_blank"
+                      class="fa fa-brands fa-x-twitter borderRadius0"
+                    ></a>
+                    <a
+                      aria-label="Youtube"
+                      href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1"
+                      target="_blank"
+                      class="fa fa-brands fa-youtube borderRadius0"
+                    ></a>
+                    <a
+                      href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA"
+                      target="_blank"
+                      ><img
+                        width="24"
+                        height="24"
+                        src="https://files.thedailycampus.com/img/default/Gnews.png"
+                        alt="Gnews.png"
+                    /></a>
+                    <a target="_blank" href="https://t.me/dailycampus"
+                      ><img
+                        width="24"
+                        height="24"
+                        src="https://files.thedailycampus.com/img/default/telegram.png"
+                        alt="telegram.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12 mb-2 pt-5 gap-3">
+            <div class="footer-menu-group">
+              <a href="#about-us" target="_blank">আমাদের সম্পর্কে</a>
+              <a href="#contact" target="_blank">যোগাযোগ</a>
+              <a href="#terms-and-conditions" target="_blank"
+                >নীতিমালা ও শর্তাবলি
+              </a>
+              <a href="#privacy-policy" target="_blank">গোপনীয়তার নীতি</a>
+              <a href="#ads" target="_blank">বিজ্ঞাপন</a>
+              <a href="#jobs" target="_blank">চাকরি</a>
+              <a href="#" target="_blank">নাগরিক সাংবাদিকতা</a>
+              <a href="#জাতীয়-ও-আন্তর্জাতিক-দিবস-উদযাপন" target="_blank"
+                >জাতীয় দিবস</a
+              >
+              <a href="#সরকারি-ছুটির-তালিকা-2025" target="_blank"
+                >সরকারি ছুটির তালিকা</a
+              >
+              <a href="#আজকের-নামাজ-সেহরি-ইফতারের-সময়" target="_blank"
+                >নামাজের সময়সূচি</a
+              >
+              <a href="#unicode-converter" target="_blank">বাংলা কনভার্টার</a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-12"></div>
+          <div class="footer-menu-group">
+            <p class="text-center">স্বত্ব © ২০১৮-২০২৫, দ্য ডেইলি ক্যাম্পাস</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-section end -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer src="assets/js/jquery.flexslider.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").classList.add("open");
+      }
+
+      function closeNav() {
+        document.getElementById("mySidepanel").classList.remove("open");
+      }
+      var width = $(window).width();
+      if (width >= 768) {
+        document.addEventListener("DOMContentLoaded", function () {
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 80) {
+              document.getElementById("navbar_top").classList.add("fixed-top");
+              navbar_height = document.querySelector(".navbar").offsetHeight;
+              document.body.style.paddingTop = navbar_height + "px";
+              $(".stickyHeaderLogoDiv").removeClass("col-md-1");
+              $(".stickyHeaderLogoDiv").addClass("col-md-2");
+              $(".stickyHeaderMenuDiv").removeClass("col-md-10");
+              $(".stickyHeaderMenuDiv").addClass("col-md-9");
+              $(".stickyLogo").show();
+              $(".desktopStickyBar").show();
+            } else {
+              document
+                .getElementById("navbar_top")
+                .classList.remove("fixed-top");
+              document.body.style.paddingTop = "0";
+              $(".stickyHeaderLogoDiv").removeClass("col-md-2");
+              $(".stickyHeaderLogoDiv").addClass("col-md-1");
+              $(".stickyHeaderMenuDiv").removeClass("col-md-9");
+              $(".stickyHeaderMenuDiv").addClass("col-md-10");
+              $(".stickyLogo").hide();
+              $(".desktopStickyBar").hide();
+            }
+          });
+        });
+      }
+    </script>
+
+    <script>
+      // $(window).on('load', function(){
+      // 				$('.flexslider').flexslider({
+      // 					controlNav: false,
+      // 					animation: "slide",
+      // 					animationLoop: false,
+      // 					directionNav: true,
+      // 					itemWidth: 320,
+      // 					itemMargin: 20,
+      // 					pausePlay: true,
+      // 					nextText: "",
+      // 					prevText: "",
+      // 					start: function(slider){
+      // 						$('body').removeClass('loading');
+      // 					}
+      // 				});
+      // 			});
+      const carousel = document.querySelector("#carouselExample");
+      const progressBar = document.querySelector(".custom-progress-bar");
+      const pauseButton = document.querySelector(".carousel-pause");
+      const playButton = document.querySelector(".carousel-play");
+
+      // Pause/Play functionality
+      pauseButton.addEventListener("click", () => {
+        carousel.carousel("pause");
+        progressBar.classList.add("paused");
+        pauseButton.style.display = "none";
+        playButton.style.display = "block";
+      });
+
+      playButton.addEventListener("click", () => {
+        carousel.carousel("cycle");
+        progressBar.classList.remove("paused");
+        pauseButton.style.display = "block";
+        playButton.style.display = "none";
+      });
+
+      // Reset progress bar on slide change
+      carousel.addEventListener("slide.bs.carousel", () => {
+        const bar = progressBar.querySelector(".bar");
+        bar.style.animation = "none";
+        bar.offsetHeight; // Trigger reflow
+        bar.style.animation = "progress 5s linear infinite";
+        if (progressBar.classList.contains("paused")) {
+          bar.style.animationPlayState = "paused";
+        }
+      });
+    </script>
+  </body>
+</html>

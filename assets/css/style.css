@@ -302,6 +302,9 @@ a {
   color: #212121;
   text-decoration: none;
 }
+a:hover {
+    color: #40a3d3
+}
 .vertical-bar-heavy {
   padding-left: 20px;
 }
@@ -452,3 +455,82 @@ paddingLR0 {
             100% { width: 100%; }
         }
  /* tdc slider  end */
+ /* online poll start */
+         .poll-wrapper {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .poll-question {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-check-label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .form-check-input {
+            margin-right: 0.5rem;
+        }
+        .btn-vote {
+            margin-top: 1rem;
+        }
+        .text-success a {
+            text-decoration: none;
+        }
+        .text-success a:hover {
+            text-decoration: underline;
+        }
+ /* online poll end */
+
+/* article page start  */
+.category-name a{
+  
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    
+}
+
+ .category-name  .text {
+    border-bottom: 2px solid;
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    
+}
+.news-reporter{
+ 
+    
+}
+.news-content {
+  font-size: 1rem; /* Adjust as needed */
+  line-height: 1.6;
+}
+.inarticle_ad {
+  max-width: 300px; /* Match iframe width */
+}
+.related-news .card {
+  border: 1px solid #e0e0e0; /* Light border for card */
+}
+.related-news .img-thumbnail {
+  max-width: 100px; /* Ensure small image */
+  height: auto;
+}
+.related-news .col-lg-3 {
+  min-height: 100px; /* Ensure enough height for bottom alignment */
+}
+.custom-underline a {
+  border-bottom: 2px solid #000; /* 2px bold underline */
+  padding-bottom: 6px; /* 5px gap between text and underline */
+}
+.custom-underline a:hover {
+  border-bottom-color: #005566; /* Optional hover color, matching typical link styling */
+}
+.tdc_google_news a{
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+}
+.tdc_google_news a:hover{
+  color: red;
+}
+/* article page end */
