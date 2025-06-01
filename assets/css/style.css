@@ -6,6 +6,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    font-family: "SolaimanLipi", sans-serif;
+    margin: 0 0 10px;
+}
+h1, h2{
+   font-size: 37px;
+   line-height: 41px;
+}
+
+p{
+  font-size: 18px;
+  line-height: 22px;
+} 
 body {
     margin: 0;
     line-height: 1.42857143;
@@ -15,6 +30,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: #fff;
 }
+
 .primaryBg {
   background: #000000 !important;
 }
