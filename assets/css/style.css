@@ -310,9 +310,6 @@ body {
             }
           }
 
-         .customCard:hover .customCard-title {
-            /* color: rgba(72, 79, 73, 0.7);  */
-        }
         /* tdc old css start */
 a {
   color: #212121;
@@ -515,10 +512,7 @@ paddingLR0 {
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
     
 }
-.news-reporter{
- 
-    
-}
+
 .news-content {
   font-size: 1rem; /* Adjust as needed */
   line-height: 1.6;
