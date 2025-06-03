@@ -19,13 +19,18 @@ h1, h2{
 
 p{
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
+
 } 
 @media (max-width: 450px) {
   h1, h2{
    font-size: 26px;
    line-height: 30px;
 }
+p{
+  font-size: 18px;
+  line-height: 22px;
+} 
 }
 body {
     margin: 0;
