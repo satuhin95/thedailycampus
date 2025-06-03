@@ -19,7 +19,7 @@ h1, h2{
 
 p{
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
 
 } 
 @media (max-width: 450px) {
@@ -29,7 +29,7 @@ p{
 }
 p{
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
 } 
 }
 body {
