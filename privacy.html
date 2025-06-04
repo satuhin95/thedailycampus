@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preload" href="assets/fonts/SolaimanLipiNormal.woff" as="font" type="font/woff" crossorigin />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- schema-markup-generator -->
+  <meta property='og:site_name' content='The Daily Campus'>
+   <meta property='og:title' content='The Daily Campus | Education, Youth, Scholarship, BCS, Jobs'>
+   <meta property='og:description' content='Education news portal | Daily Campus, BCS News, updates, BCS Story, Success Stories, PSC,BPSC, Varsity, College, School, Madrasah, Primary, SSC, HSC, Admission'>
+   <meta property='og:image' content='assets/img/favicon.png'>
+   <meta property='og:url' content='https://thedailycampus.com/'>
+   <meta property='og:type' content='The Daily Campus | Education, Youth, Scholarship, BCS, Jobs'>
+     <link rel="shortcut icon" href="assets/img/favicon.png" />
+   <!-- Twitter Card code start/twitter-card-generator -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@ TheDailyCampus">
+   <meta name="twitter:title" content="The Daily Campus | Education, Youth, Scholarship, BCS, Jobs">
+   <meta name="twitter:description"
+      content="Daily campus, the daily campus, dailycampu, thedailycampus, campus news, campus lives, campus times, campus press, university news, Bangladesh university news, Bangladeshi university news, BCS.">
+   <meta name="twitter:image" content="https://cdn.thedailycampus.com/resources/images/logo.svg">
+</head>
+
+<body>
+  <section id="header">
+    <!-- Pre Header Section start -->
+    <div class="d-none d-md-block">
+      <div class="container bg-white mt-3">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <span class="cursor-pointer me-2" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu">
+                <i class="bi bi-list fs-5 text-dark"></i>
+              </span>
+              <span class="today-date">মঙ্গলবার, ২০ মে ২০২৫</span>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="50" loading="lazy" />
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-end align-items-center">
+              <a class="btn btn-outline-dark btn-sm me-2" href="#" target="_blank">English</a>
+              <div class="d-flex">
+                <a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-twitter-x fs-5"></i>
+                </a>
+                <a aria-label="Linkedin" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+
+                <a aria-label="Telegram" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-telegram fs-5"></i>
+                </a>
+
+                <a aria-label="Youtube"
+                  href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank"
+                  class="text-dark">
+                  <i class="bi bi-youtube fs-5"></i>
+                </a>
+                <a aria-label="Whatsapp" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-whatsapp fs-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="navbar_top" class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+            <div class="col-lg-1">
+              <div class="stickyLogo mb-1">
+                <a aria-label="Logo" href="#">
+                  <img src="assets/images/logo.svg" alt="Logo" height="45">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#latest">সর্বশেষ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#national">শিক্ষাঙ্গন</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#politics">উচ্চশিক্ষা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#economics">শিক্ষা প্রশাসন</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">ভর্তি পরীক্ষা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">কর্মসংস্থান</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">স্কলারশিপ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">খেলাধুলা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">জাতীয়</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">ভিডিও স্টোরি</a>
+                  </li>
+
+
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#country-news" id="countryDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      সারাদেশ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#location">জেলার খবর</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sports">ফ্যাক্টচেক</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      আরও
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end scrollable-dropdown" aria-labelledby="moreDropdown">
+                      <li><a class="dropdown-item" href="#">তারুণ্য</a></li>
+                      <li><a class="dropdown-item" href="#">একাডেমিক পরীক্ষা</a></li>
+                      <li><a class="dropdown-item" href="#">শিক্ষা আন্দোলন</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">আন্তর্জাতিক</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">উদ্ভাবন</a></li>
+                      <li><a class="dropdown-item" href="#">বিদেশ</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">বই ও গ্রন্থাগার</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">অর্থনীতি ও ব্যবসা</a></li>
+                      <li><a class="dropdown-item" href="#">বিজ্ঞান ও প্রযুক্তি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">ধর্ম ও নৈতিকতা</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">বিনোদন ও সংস্কৃতি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">আবহাওয়া ও পরিবেশ</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-1 text-end">
+              <a href="#" class="text-dark">
+                <i class="bi bi-search fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Menu for Mobile and Mega Menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">মেনু</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">সর্বশেষ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">শিক্ষাঙ্গন</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">উচ্চশিক্ষা</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">শিক্ষা প্রশাসন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ভর্তি পরীক্ষা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">কর্মসংস্থান</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">স্কলারশিপ</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">খেলাধুলা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ভিডিও স্টোরি</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ফ্যাক্টচেক</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">তারুণ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">একাডেমিক পরীক্ষা</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">শিক্ষা আন্দোলন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">উদ্ভাবন</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বিদেশ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বই ও গ্রন্থাগার</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">অর্থনীতি ও ব্যবসা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিজ্ঞান ও প্রযুক্তি</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ধর্ম ও নৈতিকতা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিনোদন ও সংস্কৃতি</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">আবহাওয়া ও পরিবেশ</a>
+            </li>
+
+          </ul>
+          <hr />
+          <div class="d-flex flex-wrap">
+            <a class="btn btn-info me-2 mb-2" href="#"><i class="bi bi-grid"></i> সব বিভাগ</a>
+            <a class="btn btn-outline-dark me-2 mb-2" href="#"><i class="bi bi-film"></i> ভিডিও</a>
+
+            <a class="btn btn-outline-dark me-2 mb-2" href="#" target="_blank"><i class="bi bi-megaphone"></i>
+              বিজ্ঞাপন</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pre Header Section End -->
+    <!-- Mobile Header -->
+    <div class="container mobileHeader d-block d-sm-none bg-light">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <div class="text-end marginT8">
+            <span onclick="openNav()"><i class="fa fa-bars sidebarIcon colorBlack"></i></span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="marginT2 text-start">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="text-end marginT4">
+            <a class="mobileHeaderOtherSite colorBlack" aria-label="English" href="#" target="_blank">English</a>
+            <a class="mobileHeaderOtherSite text-center" aria-label="Search" href="#">
+              <span><i class="fa fa-magnifying-glass searchIcon colorBlack"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div id="mySidepanel" class="sidepanel d-block d-sm-none">
+      <div class="container borderC1B1">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <div class="paddingT5 paddingB5 marginT5">
+              <a aria-label="Logo" href="#">
+                <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text-end marginT10">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 paddingLR5">
+            <div class="borderC1-1 borderRadius5 marginT15 marginB15 paddingLR20 paddingT10 paddingB10">
+              <form method="get" action="#">
+                <input type="hidden" name="search" value="yes" />
+                <div class="row g-2">
+                  <div class="col-10">
+                    <input type="text" name="headline" class="form-control" placeholder="এখানে খুঁজুন..." />
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-block bg-black colorWhite">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="প্রচ্ছদ" href="#"><i class="fa fa-caret-right"></i> প্রচ্ছদ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সর্বশেষ" href="#/latest"><i class="fa fa-caret-right"></i>
+              সর্বশেষ</a>
+          </div>
+          <div class="loadMenubarCategories"></div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সব বিভাগ" href="#/categories"><i class="fa fa-caret-right"></i> সব
+              বিভাগ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="আর্কাইভ" href="#/archive"><i class="fa fa-caret-right"></i>
+              আর্কাইভ</a>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="বিজ্ঞাপন" href="#/advertisement" target="_blank"><i
+                class="fa fa-caret-right"></i> বিজ্ঞাপন</a>
+          </div>
+
+          <div class="col-12 marginT20">
+            <div class="topSocialIcon text-center borderC1T1 borderC1B1 padding10">
+              <a aria-label="Facebook" href="#" target="_blank" class="fa-brands fa-facebook"></a>
+              <a aria-label="Twitter" href="#" target="_blank" class="fa-brands fa-x-twitter"></a>
+              <a aria-label="Linkedin" href="#" target="_blank" class="fa-brands fa-linkedin"></a>
+              <a aria-label="Instagram" href="#" target="_blank" class="fa-brands fa-instagram"></a>
+              <a aria-label="Youtube" href="#" target="_blank" class="fa-brands fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Privacy Policy english section start -->
+<section id="privacy-policy">
+  <div class="container-fluid">
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-12 col-md-9 mx-auto">
+          <div class="privacy-policy">
+            <h3 class="my-1">
+              <span class="fw-bold text-warning text-uppercase">Privacy Policy</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 my-2 mx-auto">
+          <p class="">The Daily Campus is committed to safeguarding your personal information when you engage with our website or services. This Privacy Policy outlines how we collect, use, and protect personal information obtained from visitors/readers through the following services:</p>
+          <ul>
+            <li>Any of The Daily Campus website that links to this Privacy Policy;</li>
+            <li>Social media or official The Daily Campus content on other websites.</li>
+          </ul>
+          <p>This Privacy Policy applies only to content and services that are genuinely generated by The Daily Campus. It does not extend to any websites, pages, or groups that falsely represent The Daily Campus or misuse its name or logo.</p>
+          <p>The Daily Campus collects or receives information about its users for various purposes, such as providing tailored services, monitoring and improving our offerings, and for marketing or targeted advertisements. Such information may include your name, address, phone number, email address, age, social media account details, or other relevant data ("the Information").</p>
+          <p>There may be additional privacy policies applicable to specific services offered by The Daily Campus. We encourage users to review these policies when registering or subscribing to such services. The Daily Campus respects the privacy of its visitors/readers and makes every effort to ensure that the information collected is used solely for the purposes for which it was received.</p>
+
+          <h3 class="fw-bold text-uppercase">Special Precaution</h3>
+          <p>There may exist fake websites, unauthorized social media pages, or groups operating under the name of The Daily Campus. The Daily Campus bears no responsibility for any content generated, published, or shared on such unauthorized platforms.</p>
+
+          <h3 class="fw-bold text-uppercase">How The Daily Campus Collects Information</h3>
+          <p>The Daily Campus collects information from users upon their interaction with our website, including but not limited to:</p>
+          <ul>
+            <li>Registering on the website;</li>
+            <li>Subscribing to newsletters;</li>
+            <li>Participating in surveys, competitions, or other interactive features;</li>
+            <li>Logging into our website or related services.</li>
+          </ul>
+          <p>The information collected may include your name, address, phone number, email address, age, social media account details, or other relevant data ("the Information"). This information is gathered to enhance user experience, improve our services, and deliver targeted content or advertisements.</p>
+
+          <h3 class="fw-bold text-uppercase">Use of Collected Information</h3>
+          <p>The Daily Campus collects and uses information to provide services, monitor and enhance website performance, and for marketing purposes, including targeted advertisements. We strive to limit the use of your information to the specific purposes for which it was collected.</p>
+          <p>There may be additional privacy policies applicable to specific services offered by The Daily Campus. We encourage users to review these policies when registering or subscribing to such services.</p>
+
+          <h3 class="fw-bold text-uppercase">Disclosure of Information</h3>
+          <p>The Daily Campus does not sell, trade, or otherwise share personally identifiable information with third parties, except with entities that assist in operating our website, conducting business, or serving our users. We may share information internally to better understand our user base, promote user growth, and enhance engagement.</p>
+          <p>If The Daily Campus intends to use your personal information in a manner not described in this policy, we will seek your consent. We may disclose information when required to comply with the laws of Bangladesh or in response to legal processes. Additionally, The Daily Campus may share information with service providers, affiliates, consultants, or partners engaged to perform business-related functions on our behalf. Information may also be shared to investigate or prevent illegal activities, protect our interests, enforce our policies or Terms of Use, or verify compliance with our services’ governing policies.</p>
+          <p>In all cases, The Daily Campus will endeavor to limit the scope of information shared to what is necessary to achieve the intended purpose.</p>
+
+          <h3 class="fw-bold text-uppercase">Advertisements</h3>
+          <p>Advertisements on The Daily Campus website may be provided by third-party companies or ad networks via independent ad tags. These third parties may collect user information, and The Daily Campus is not responsible for any outcomes resulting from such collection or sharing.</p>
+          <p>The Daily Campus does not accept liability for the content of advertisements displayed on its website.</p>
+
+          <h3 class="fw-bold text-uppercase">Third-Party Advertisements and Links</h3>
+          <p>At our discretion, The Daily Campus website may display advertisements for third-party products or services. These third parties may have their own privacy policies, and The Daily Campus is not responsible for their content, including any errors, omissions, or inaccuracies.</p>
+          <p>The Daily Campus is not liable for information leakage resulting from users accessing external links, applications, or websites, whether linked from our website or content.</p>
+
+          <h3 class="fw-bold text-uppercase">Use of Cookies</h3>
+          <p>The Daily Campus does not collect user data through cookies or store personally identifiable information via cookies. However, third parties associated with our website may use cookies during your visit. The Daily Campus does not control these third-party cookies, and users should review the relevant third-party privacy policies.</p>
+
+          <h3 class="fw-bold text-uppercase">Demographic and Purchase Information</h3>
+          <p>We may use external sources of demographic or other information to deliver more targeted communications and promotions. The Daily Campus uses tools like Google Analytics to track user behavior on our website. Users can opt out of Google Analytics for Display Advertising and customize Google Display Network ads through Google’s Ads Settings.</p>
+
+          <h3 class="fw-bold text-uppercase">Communication by The Daily Campus</h3>
+          <p>The Daily Campus may contact users via email, phone, or SMS to invite participation in campaigns, competitions, surveys, or to gather feedback, based on the information provided by users.</p>
+
+          <h3 class="fw-bold text-uppercase">Accessing the Website from Outside Bangladesh</h3>
+          <p>Personal information submitted by users outside Bangladesh will be processed in accordance with this Privacy Policy and our Terms of Use.</p>
+
+          <h3 class="fw-bold text-uppercase">Governing Law</h3>
+          <p>This Privacy Policy and the relationship between The Daily Campus and its users are governed by the laws of Bangladesh. Any disputes regarding the use, retention, disclosure, or dissemination of information shall be subject to the exclusive jurisdiction of the courts of Bangladesh.</p>
+
+          <h3 class="fw-bold text-uppercase">Opt-Out</h3>
+          <p>Users who prefer not to receive marketing emails from The Daily Campus can unsubscribe using the options provided at the bottom of each email.</p>
+
+          <h3 class="fw-bold text-uppercase">Data Retention</h3>
+          <p>We retain your personal information for as long as your account exists with The Daily Campus or as necessary to provide our services. Upon your request, we will delete your information as soon as reasonably possible, subject to account activity and applicable laws. However, we may retain some information for legal purposes, such as tax, reporting, or auditing obligations, or for a further period (5-7 years) as per our internal data retention policy. Delays in data deletion may occur, and The Daily Campus will not be liable for such delays.</p>
+          <p>You may access or modify your personal information by logging into the website. Users are responsible for updating their information when changes occur.</p>
+
+          <h3 class="fw-bold text-uppercase">Data Deletion</h3>
+          <p>The Daily Campus supports requests for data deletion. Such requests should be made in writing and in coordination with The Daily Campus Data Protection and Records Management Committee to ensure clarity. To initiate a data deletion request, please email <a href="mailto:info@thedailycampus.com">info@thedailycampus.com</a>.</p>
+          <p>We retain your information only as long as necessary to provide services or until you request its deletion. If you have multiple accounts, separate deletion requests must be submitted for each account, including associated email addresses or phone numbers.</p>
+
+          <h3 class="fw-bold text-uppercase">Modification of Privacy Policy</h3>
+          <p>The Daily Campus reserves the right to amend, modify, or update this Privacy Policy at any time. Changes will be posted on the website, and continued use of our services constitutes acceptance of the updated policy. We encourage users to periodically review this policy to stay informed about how we collect, use, and share information.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Privacy Policy english section end -->
+
+<!-- Privacy Policy bangla section start -->
+<section id="privacy-policy-bangla">
+  <div class="container-fluid">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-9 mx-auto">
+          <div class="privacy-policy">
+            <h3 class="my-1">
+              <span class="fw-bold text-danger text-uppercase">গোপনীয়তা নীতি</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 my-2 mx-auto">
+          <p>আমাদের ওয়েবসাইট বা সম্পর্কিত সেবাগুলো ব্যবহারের সময় আপনার ব্যক্তিগত তথ্য সুরক্ষিত রাখতে দ্য ডেইলি ক্যাম্পাস অঙ্গীকারবদ্ধ। এই গোপনীয়তা নীতি নিম্নোক্ত মাধ্যম থেকে পাঠক/ভিজিটরদের সংগৃহীত ব্যক্তিগত তথ্যের ব্যবহারের ক্ষেত্রে প্রযোজ্য:</p>
+          <ul>
+            <li>এই গোপনীয়তা নীতির সঙ্গে সংযুক্ত দ্য ডেইলি ক্যাম্পাসের যেকোনো ওয়েবসাইট;</li>
+            <li>সামাজিক যোগাযোগমাধ্যম বা অন্য ওয়েবসাইটে দ্য ডেইলি ক্যাম্পাসের অফিসিয়াল কনটেন্ট।</li>
+          </ul>
+          <p>এই গোপনীয়তা নীতি শুধুমাত্র দ্য ডেইলি ক্যাম্পাস কর্তৃক প্রকৃত ও সত্যিকারভাবে তৈরি কনটেন্ট এবং সেবার ক্ষেত্রে প্রযোজ্য। দ্য ডেইলি ক্যাম্পাসের নাম বা লোগো ব্যবহার করে কোনো নকল/ভুয়া ওয়েবসাইট, পেজ বা গ্রুপে প্রকাশিত কনটেন্টের ক্ষেত্রে এই নীতি প্রযোজ্য হবে না।</p>
+          <p>দ্য ডেইলি ক্যাম্পাস বিভিন্ন উদ্দেশ্যে ব্যবহারকারীদের তথ্য সংগ্রহ করে, যেমন পাঠকদের জন্য সেবা প্রদান, সেবার মান উন্নত করা, এবং বিপণন বা টার্গেটেড বিজ্ঞাপনের জন্য। এই তথ্যের মধ্যে আপনার নাম, ঠিকানা, ফোন নম্বর, ইমেইল ঠিকানা, বয়স, সামাজিক মাধ্যমের অ্যাকাউন্ট ইত্যাদি অন্তর্ভুক্ত থাকতে পারে (“তথ্য”)।</p>
+          <p>দ্য ডেইলি ক্যাম্পাসের কিছু নির্দিষ্ট সেবার জন্য আলাদা গোপনীয়তা নীতি প্রযোজ্য হতে পারে। আমরা পাঠকদের অনুরোধ করছি, এই সেবাগুলোতে নিবন্ধন বা সাবস্ক্রাইব করার সময় সংশ্লিষ্ট নীতিমালা পড়ে নিতে। দ্য ডেইলি ক্যাম্পাস পাঠকদের ব্যক্তিগত গোপনীয়তার প্রতি শ্রদ্ধাশীল এবং সংগৃহীত তথ্য যে উদ্দেশ্যে নেওয়া হয়েছে, তা শুধুমাত্র সেই উদ্দেশ্যে ব্যবহৃত হয় তা নিশ্চিত করতে সর্বোচ্চ চেষ্টা করে।</p>
+
+          <h3 class="fw-bold text-uppercase">বিশেষ সতর্কতা</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস নামে একাধিক নকল/ভুয়া ওয়েবসাইট, অননুমোদিত সামাজিক মাধ্যমের পেজ বা গ্রুপ থাকতে পারে। এই ধরনের অননুমোদিত প্ল্যাটফর্মে প্রকাশিত, শেয়ার করা বা তৈরি কোনো কনটেন্টের জন্য দ্য ডেইলি ক্যাম্পাস কোনো দায় বহন করবে না।</p>
+
+          <h3 class="fw-bold text-uppercase">দ্য ডেইলি ক্যাম্পাস যেভাবে তথ্য সংগ্রহ করে</h3>
+          <p>নিম্নোক্ত যেকোনো ক্ষেত্রে পাঠক দ্য ডেইলি ক্যাম্পাস-কে তথ্য সংগ্রহের সার্বিক সম্মতি প্রদান করেছেন এবং এই গোপনীয়তা নীতির সব শর্ত মেনে নিয়েছেন বলে ধরে নেওয়া হবে:</p>
+          <ul>
+            <li>ওয়েবসাইটে নিবন্ধন করলে;</li>
+            <li>নিউজলেটার সাবস্ক্রাইব করলে;</li>
+            <li>জরিপ বা প্রতিযোগিতায় অংশগ্রহণ করলে;</li>
+            <li>ওয়েবসাইট বা সম্পর্কিত পেজে লগইন করলে।</li>
+          </ul>
+          <p>সংগৃহীত তথ্যের মধ্যে আপনার নাম, ঠিকানা, ফোন নম্বর, ইমেইল ঠিকানা, বয়স, সামাজিক মাধ্যমের অ্যাকাউন্ট ইত্যাদি অন্তর্ভুক্ত থাকতে পারে (“তথ্য”)। এই তথ্য ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে, আমাদের সেবার মান বাড়াতে এবং টার্গেটেড কনটেন্ট বা বিজ্ঞাপন প্রদানের জন্য সংগ্রহ করা হয়।</p>
+
+          <h3 class="fw-bold text-uppercase">সংগৃহীত তথ্যের ব্যবহার</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস সেবা প্রদান, ওয়েবসাইটের কার্যকারিতা নিরীক্ষণ ও উন্নত করতে এবং বিপণন উদ্দেশ্যে তথ্য সংগ্রহ ও ব্যবহার করে, যার মধ্যে টার্গেটেড বিজ্ঞাপনও অন্তর্ভুক্ত। আমরা আপনার তথ্যের ব্যবহার সীমিত রাখার চেষ্টা করি, যে উদ্দেশ্যে তথ্য সংগ্রহ করা হয়েছে শুধুমাত্র সেই উদ্দেশ্যে।</p>
+          <p>দ্য ডেইলি ক্যাম্পাসের কিছু নির্দিষ্ট সেবার জন্য আলাদা গোপনীয়তা নীতি প্রযোজ্য হতে পারে। আমরা ব্যবহারকারীদের এই সেবাগুলোতে নিবন্ধন বা সাবস্ক্রাইব করার সময় সংশ্লিষ্ট নীতিমালা পর্যালোচনা করার জন্য উৎসাহিত করি।</p>
+
+          <h3 class="fw-bold text-uppercase">সংগৃহীত তথ্য প্রকাশ</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস ওয়েবসাইট পরিচালনা, ব্যবসা পরিচালনা এবং ব্যবহারকারীদের সেবা প্রদানের প্রয়োজন ছাড়া ব্যক্তিগত তথ্য বিক্রি বা আদান-প্রদান করে না। তবে, ব্যবহারকারীদের পছন্দ-অপছন্দ বোঝার জন্য, ব্যবহারকারীর সংখ্যা বাড়াতে বা সম্পৃক্ততা বাড়াতে অভ্যন্তরীণভাবে তথ্য আদান-প্রদান করা হতে পারে।</p>
+          <p>যদি দ্য ডেইলি ক্যাম্পাস এই নীতিতে উল্লিখিত উদ্দেশ্যের বাইরে তথ্য ব্যবহার করতে চায়, তবে ব্যবহারকারীর সম্মতি নেওয়া হবে। বাংলাদেশের আইনি বাধ্যবাধকতা মেনে চলার জন্য বা আইনি প্রক্রিয়ার প্রতিক্রিয়ায় তথ্য প্রকাশ করা হতে পারে। এছাড়া, দ্য ডেইলি ক্যাম্পাস তার পক্ষে ব্যবসায়িক কাজ সম্পাদনের জন্য নিযুক্ত সেবাদাতা, অধিভুক্ত কোম্পানি, পরামর্শক বা অংশীদারদের সঙ্গে তথ্য শেয়ার করতে পারে। অবৈধ কার্যকলাপ তদন্ত বা প্রতিরোধ, আমাদের স্বার্থ রক্ষা, আমাদের নীতি বা ব্যবহারের শর্তাবলি প্রয়োগ, অথবা সেবার শর্তাবলি মান্য করার জন্যও তথ্য শেয়ার করা হতে পারে।</p>
+          <p>সকল ক্ষেত্রে, দ্য ডেইলি ক্যাম্পাস তথ্য শেয়ারের পরিধি সীমিত রাখতে এবং শুধুমাত্র প্রয়োজনীয় উদ্দেশ্য পূরণের জন্য তথ্য ব্যবহার করতে সর্বোচ্চ চেষ্টা করবে।</p>
+
+          <h3 class="fw-bold text-uppercase">বিজ্ঞাপন</h3>
+          <p>দ্য ডেইলি ক্যাম্পাসের ওয়েবসাইটে তৃতীয় পক্ষের কোম্পানি বা বিজ্ঞাপন নেটওয়ার্কের মাধ্যমে স্বাধীন বিজ্ঞাপন ট্যাগের মাধ্যমে বিজ্ঞাপন প্রদর্শিত হতে পারে। এই তৃতীয় পক্ষগুলো ব্যবহারকারীর তথ্য সংগ্রহ করতে পারে, এবং এর ফলে সৃষ্ট কোনো পরিণতির জন্য দ্য ডেইলি ক্যাম্পাস দায়ী থাকবে না।</p>
+          <p>দ্য ডেইলি ক্যাম্পাস ওয়েবসাইটে প্রদর্শিত বিজ্ঞাপনের বিষয়বস্তুর জন্য কোনো দায় গ্রহণ করবে না।</p>
+
+          <h3 class="fw-bold text-uppercase">তৃতীয় পক্ষের বিজ্ঞাপন ও লিংক</h3>
+          <p>দ্য ডেইলি ক্যাম্পাসের বিবেচনায়, ওয়েবসাইটে তৃতীয় পক্ষের পণ্য বা সেবার বিজ্ঞাপন প্রদর্শিত হতে পারে। এই তৃতীয় পক্ষের সাইটগুলোর নিজস্ব গোপনীয়তা নীতি থাকতে পারে, এবং তাদের বিষয়বস্তুতে কোনো ভুল, অসম্পূর্ণতা বা ত্রুটির জন্য দ্য ডেইলি ক্যাম্পাস দায়ী থাকবে না।</p>
+          <p>ব্যবহারকারী যদি আমাদের ওয়েবসাইট বা কনটেন্টে প্রদত্ত লিংকের মাধ্যমে কোনো পৃথক ওয়েবসাইটে প্রবেশ করে তথ্য ফাঁস হয়, তবে তার জন্য দ্য ডেইলি ক্যাম্পাস দায়ী থাকবে না।</p>
+
+          <h3 class="fw-bold text-uppercase">কুকির ব্যবহার</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস কুকির মাধ্যমে ব্যবহারকারীর তথ্য সংগ্রহ বা ব্যক্তিগত তথ্য সংরক্ষণ করে না। তবে, আমাদের ওয়েবসাইটের সঙ্গে সংযুক্ত তৃতীয় পক্ষ আপনার দর্শনের সময় কুকি সংগ্রহ করতে পারে। এই তৃতীয় পক্ষের কুকির উপর দ্য ডেইলি ক্যাম্পাসের কোনো নিয়ন্ত্রণ নেই, তাই ব্যবহারকারীদের সংশ্লিষ্ট তৃতীয় পক্ষের ওয়েবসাইটের নীতি পরীক্ষা করা উচিত।</p>
+
+          <h3 class="fw-bold text-uppercase">জনগোষ্ঠী ও ক্রয়সংক্রান্ত তথ্য</h3>
+          <p>আমরা আরও টার্গেটেড যোগাযোগ এবং প্রচারণার জন্য জনগোষ্ঠীসংক্রান্ত বা অন্যান্য তথ্য বিভিন্ন উৎস থেকে সংগ্রহ করতে পারি। আমাদের ওয়েবসাইটে ব্যবহারকারীদের আচরণ অনুসন্ধানের জন্য আমরা গুগল অ্যানালিটিকস ব্যবহার করি। ব্যবহারকারীরা গুগলের অ্যাডস সেটিংস ব্যবহার করে গুগল অ্যানালিটিকসের আওতার বাইরে যেতে বা গুগল ডিসপ্লে নেটওয়ার্ক বিজ্ঞাপন কাস্টমাইজ করতে পারেন।</p>
+
+          <h3 class="fw-bold text-uppercase">দ্য ডেইলি ক্যাম্পাসের যোগাযোগ</h3>
+          <p>সময়ে সময়ে দ্য ডেইলি ক্যাম্পাস ব্যবহারকারীদের সঙ্গে ইমেইল, ফোন বা এসএমএসের মাধ্যমে যোগাযোগ করতে পারে। এটি মূলত প্রতিযোগিতা, জরিপ, প্রচারণায় অংশগ্রহণের আমন্ত্রণ বা প্রতিক্রিয়া সংগ্রহের জন্য হবে, যা ব্যবহারকারীদের প্রদত্ত তথ্যের ভিত্তিতে করা হবে।</p>
+
+          <h3 class="fw-bold text-uppercase">দেশের বাইরে থেকে ওয়েবসাইটে প্রবেশ</h3>
+          <p>দেশের বাইরে থেকে প্রদত্ত ব্যক্তিগত তথ্য এই গোপনীয়তা নীতি এবং আমাদের ব্যবহারের শর্তাবলি অনুসারে প্রক্রিয়াজাত করা হবে।</p>
+
+          <h3 class="fw-bold text-uppercase">আইন</h3>
+          <p>দ্য ডেইলি ক্যাম্পাসের গোপনীয়তা নীতি এবং ব্যবহারকারীদের সঙ্গে সম্পর্ক বাংলাদেশের আইন দ্বারা নিয়ন্ত্রিত হবে। তথ্য ব্যবহার, সংরক্ষণ, প্রকাশ, ফাঁস বা বিতরণ নিয়ে কোনো বিতর্ক সৃষ্টি হলে বাংলাদেশের আদালতে তার মীমাংসা হবে। আদালতের রায়ই এ ক্ষেত্রে চূড়ান্ত। পাঠক যে জাতির, দেশের বা পেশার হোন না কেন, তিনি দ্য ডেইলি ক্যাম্পাসের ওয়েবসাইটে প্রবেশ করলে, এর কোনো সেবা নিলে বা অ্যাপ্লিকেশন ব্যবহার করলে তাঁর ক্ষেত্রে এই গোপনীয়তার নীতি প্রযোজ্য হবে।</p>
+
+          <h3 class="fw-bold text-uppercase">প্রত্যাহার করা</h3>
+          <p>যদি কোনো ব্যবহারকারী দ্য ডেইলি ক্যাম্পাসের বিপণনসংক্রান্ত ইমেইল গ্রহণ করতে না চান, তবে তিনি প্রতিটি ইমেইলের নিচে দেওয়া আনসাবস্ক্রাইব অপশন ব্যবহার করে সহজেই তা বন্ধ করতে পারেন। আর পাঠক যদি নিবন্ধিত অ্যাকাউন্ট রাখতে না চান, তবে এই ঠিকানায় ইমেইল পাঠালেই চলবে: <a href="mailto:info@thedailycampus.com">info@thedailycampus.com</a></p>
+
+          <h3 class="fw-bold text-uppercase">তথ্য ধারণ</h3>
+          <p>আপনার অ্যাকাউন্ট দ্য ডেইলি ক্যাম্পাসে থাকা পর্যন্ত বা আমাদের সেবা প্রদানের জন্য প্রয়োজনীয় সময় পর্যন্ত আপনার ব্যক্তিগত তথ্য সংরক্ষণ করা হবে। আপনার অনুরোধে, অ্যাকাউন্টের কার্যকলাপ এবং প্রযোজ্য আইনের ভিত্তিতে যত দ্রুত সম্ভব আপনার তথ্য মুছে ফেলা হবে। তবে, কর, আইনি প্রতিবেদন বা নিরীক্ষার বাধ্যবাধকতার মতো আইনি উদ্দেশ্যে কিছু তথ্য সংরক্ষণ করা হতে পারে। আমাদের অভ্যন্তরীণ তথ্য ধারণ নীতি অনুসারে তথ্য ৫ থেকে ৭ বছর পর্যন্ত সংরক্ষণ করা হতে পারে। তথ্য মুছে ফেলার প্রক্রিয়ায় স্বাভাবিকের চেয়ে বেশি সময় লাগলে দ্য ডেইলি ক্যাম্পাস দায়ী থাকবে না।</p>
+          <p>আপনি ওয়েবসাইটে লগইন করে আপনার ব্যক্তিগত তথ্য অ্যাক্সেস বা পরিবর্তন করতে পারেন। তথ্যে পরিবর্তনের প্রয়োজন হলে আপনাকে অবশ্যই তা হালনাগাদ করতে হবে। দ্য ডেইলি ক্যাম্পাস আপনার দেওয়া তথ্য পরিবর্তন করবে না।</p>
+
+          <h3 class="fw-bold text-uppercase">তথ্য মুছে ফেলা</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস ব্যবহারকারীর তথ্য মুছে ফেলার অনুরোধ সমর্থন করে। এই ধরনের অনুরোধ লিখিতভাবে এবং দ্য ডেইলি ক্যাম্পাসের তথ্য সুরক্ষা ও রেকর্ড ব্যবস্থাপনা কমিটির সহযোগিতায় করতে হবে, যাতে অনুরোধের স্পষ্টতা নিশ্চিত হয়। তথ্য মুছে ফেলার জন্য অনুরোধ করতে, <a href="mailto:info@thedailycampus.com">info@thedailycampus.com</a> এ ইমেইল পাঠান।</p>
+          <p>আমাদের সেবা প্রদানের জন্য প্রয়োজনীয় সময় পর্যন্ত বা আপনি তথ্য ধরে না রাখার অনুরোধ না করা পর্যন্ত আমরা আপনার তথ্য সংরক্ষণ করব। আপনি যদি আর আমাদের আপনার তথ্য ব্যবহার করতে না দিতে চান, তবে আপনি আপনার তথ্য মুছে ফেলার বা অ্যাকাউন্ট বন্ধ করার জন্য অনুরোধ করতে পারেন। আইনি বাধ্যবাধকতা মেনে চলার জন্য প্রয়োজনীয় পরিমাণে তথ্য সংরক্ষণ করা হতে পারে। আপনার একাধিক অ্যাকাউন্ট থাকলে, প্রতিটি অ্যাকাউন্টের জন্য সংশ্লিষ্ট ইমেইল আইডি বা ফোন নম্বর সহ পৃথক অনুরোধ দাখিল করতে হবে।</p>
+
+          <h3 class="fw-bold text-uppercase">গোপনীয়তা নীতি সংশোধন</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস যেকোনো সময় এই গোপনীয়তা নীতির ধারা সংশোধন, পরিবর্তন বা বাদ দেওয়ার অধিকার সংরক্ষণ করে। পরিবর্তিত নীতি তাৎক্ষণিকভাবে ওয়েবসাইটে প্রকাশিত হবে। পরিবর্তনের পর সেবা ব্যবহার অব্যাহত রাখলে ধরে নেওয়া হবে যে আপনি পরিবর্তনগুলো মেনে নিয়েছেন। আমরা ব্যবহারকারীদের নিয়মিত এই নীতি পর্যালোচনা করার জন্য উৎসাহিত করি, যাতে আপনি জানতে পারেন আমরা কীভাবে তথ্য সংগ্রহ, ব্যবহার এবং শেয়ার করি।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Privacy Policy bangla section end -->
+
+<!-- footer-section start -->
+<section class="desktopFooter hidden-xs hidden-print">
+  <div class="container">
+    <div class="row desktopFlexRow">
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-3 pt-5 gap-3">
+            <a aria-label="Logo" href="/">
+              <img src="assets/img/TDC.svg" alt="The Daily Campus Logo" height="50" loading="lazy" />
+            </a>
+          </div>
+          <div class="col-12">
+            <h6 class="text-start">সম্পাদক: মাহবুব রনি</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-5 pt-5 gap-3 text-center">
+            <div class="followDiv">
+              <p class="marginB0 title11 marginT10">অনুসরণ করুন</p>
+              <div class="topSocialIcon">
+                <a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank" class="fa fa-brands fa-facebook borderRadius0"></a>
+                <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank" class="fa fa-brands fa-instagram borderRadius0"></a>
+                <a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank" class="fa fa-brands fa-x-twitter borderRadius0"></a>
+                <a aria-label="Youtube" href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank" class="fa fa-brands fa-youtube borderRadius0"></a>
+                <a href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA" target="_blank">
+                  <img width="24" height="24" src="https://files.thedailycampus.com/img/default/Gnews.png" alt="Google News" />
+                </a>
+                <a href="https://t.me/dailycampus" target="_blank">
+                  <img width="24" height="24" src="https://files.thedailycampus.com/img/default/telegram.png" alt="Telegram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 mb-2 gap-3">
+        <div class="footer-menu-group">
+          <a href="#about-us">আমাদের সম্পর্কে</a>
+          <a href="#contact">যোগাযোগ</a>
+          <a href="#terms-and-conditions">নীতিমালা ও শর্তাবলি</a>
+          <a href="#privacy-policy">গোপনীয়তা নীতি</a>
+          <a href="#ads">বিজ্ঞাপন</a>
+          <a href="#jobs">চাকরি</a>
+          <a href="#citizen-journalism">নাগরিক সাংবাদিকতা</a>
+          <a href="#national-international-days">জাতীয় দিবস</a>
+          <a href="#public-holidays-2025">সরকারি ছুটির তালিকা</a>
+          <a href="#prayer-times">নামাজের সময়সূচি</a>
+          <a href="#unicode-converter">বাংলা কনভার্টার</a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="footer-menu-group">
+        <p class="text-center fs-6 text">স্বত্ব © ২০১৮-২০২৫, দ্য ডেইলি ক্যাম্পাস</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer-section end -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script defer src="assets/js/jquery.flexslider.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").classList.add("open");
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").classList.remove("open");
+    }
+    var width = $(window).width();
+    if (width >= 768) {
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 80) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+            $('.stickyHeaderLogoDiv').removeClass('col-md-1');
+            $('.stickyHeaderLogoDiv').addClass('col-md-2');
+            $('.stickyHeaderMenuDiv').removeClass('col-md-10');
+            $('.stickyHeaderMenuDiv').addClass('col-md-9');
+            $('.stickyLogo').show();
+            $('.desktopStickyBar').show();
+          } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            document.body.style.paddingTop = '0';
+            $('.stickyHeaderLogoDiv').removeClass('col-md-2');
+            $('.stickyHeaderLogoDiv').addClass('col-md-1');
+            $('.stickyHeaderMenuDiv').removeClass('col-md-9');
+            $('.stickyHeaderMenuDiv').addClass('col-md-10');
+            $('.stickyLogo').hide();
+            $('.desktopStickyBar').hide();
+          }
+        });
+      });
+    }
+  </script>
+
+  <script>
+
+    const carousel = document.querySelector('#carouselExample');
+    const progressBar = document.querySelector('.custom-progress-bar');
+    const pauseButton = document.querySelector('.carousel-pause');
+    const playButton = document.querySelector('.carousel-play');
+
+    // Pause/Play functionality
+    pauseButton.addEventListener('click', () => {
+      carousel.carousel('pause');
+      progressBar.classList.add('paused');
+      pauseButton.style.display = 'none';
+      playButton.style.display = 'block';
+    });
+
+    playButton.addEventListener('click', () => {
+      carousel.carousel('cycle');
+      progressBar.classList.remove('paused');
+      pauseButton.style.display = 'block';
+      playButton.style.display = 'none';
+    });
+
+    // Reset progress bar on slide change
+    carousel.addEventListener('slide.bs.carousel', () => {
+      const bar = progressBar.querySelector('.bar');
+      bar.style.animation = 'none';
+      bar.offsetHeight; // Trigger reflow
+      bar.style.animation = 'progress 5s linear infinite';
+      if (progressBar.classList.contains('paused')) {
+        bar.style.animationPlayState = 'paused';
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

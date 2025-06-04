@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preload" href="assets/fonts/SolaimanLipiNormal.woff" as="font" type="font/woff" crossorigin />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- schema-markup-generator -->
+  <meta property='og:site_name' content='The Daily Campus'>
+   <meta property='og:title' content='The Daily Campus | Education, Youth, Scholarship, BCS, Jobs'>
+   <meta property='og:description' content='Education news portal | Daily Campus, BCS News, updates, BCS Story, Success Stories, PSC,BPSC, Varsity, College, School, Madrasah, Primary, SSC, HSC, Admission'>
+   <meta property='og:image' content='assets/img/favicon.png'>
+   <meta property='og:url' content='https://thedailycampus.com/'>
+   <meta property='og:type' content='The Daily Campus | Education, Youth, Scholarship, BCS, Jobs'>
+     <link rel="shortcut icon" href="assets/img/favicon.png" />
+   <!-- Twitter Card code start/twitter-card-generator -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@ TheDailyCampus">
+   <meta name="twitter:title" content="The Daily Campus | Education, Youth, Scholarship, BCS, Jobs">
+   <meta name="twitter:description"
+      content="Daily campus, the daily campus, dailycampu, thedailycampus, campus news, campus lives, campus times, campus press, university news, Bangladesh university news, Bangladeshi university news, BCS.">
+   <meta name="twitter:image" content="https://cdn.thedailycampus.com/resources/images/logo.svg">
+</head>
+
+<body>
+  <section id="header">
+    <!-- Pre Header Section start -->
+    <div class="d-none d-md-block">
+      <div class="container bg-white mt-3">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <span class="cursor-pointer me-2" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu">
+                <i class="bi bi-list fs-5 text-dark"></i>
+              </span>
+              <span class="today-date">মঙ্গলবার, ২০ মে ২০২৫</span>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="50" loading="lazy" />
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-end align-items-center">
+              <a class="btn btn-outline-dark btn-sm me-2" href="#" target="_blank">English</a>
+              <div class="d-flex">
+                <a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+                <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank"
+                  class="text-dark me-2">
+                  <i class="bi bi-twitter-x fs-5"></i>
+                </a>
+                <a aria-label="Linkedin" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+
+                <a aria-label="Telegram" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-telegram fs-5"></i>
+                </a>
+
+                <a aria-label="Youtube"
+                  href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank"
+                  class="text-dark">
+                  <i class="bi bi-youtube fs-5"></i>
+                </a>
+                <a aria-label="Whatsapp" href="#" target="_blank" class="text-dark me-2">
+                  <i class="bi bi-whatsapp fs-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="navbar_top" class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <div class="row w-100 align-items-center">
+            <div class="col-lg-1">
+              <div class="stickyLogo mb-1">
+                <a aria-label="Logo" href="#">
+                  <img src="assets/images/logo.svg" alt="Logo" height="45">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#latest">সর্বশেষ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#national">শিক্ষাঙ্গন</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#politics">উচ্চশিক্ষা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#economics">শিক্ষা প্রশাসন</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">ভর্তি পরীক্ষা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">কর্মসংস্থান</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">স্কলারশিপ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">খেলাধুলা</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">জাতীয়</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#international">ভিডিও স্টোরি</a>
+                  </li>
+
+
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#country-news" id="countryDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      সারাদেশ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#location">জেলার খবর</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sports">ফ্যাক্টচেক</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      আরও
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end scrollable-dropdown" aria-labelledby="moreDropdown">
+                      <li><a class="dropdown-item" href="#">তারুণ্য</a></li>
+                      <li><a class="dropdown-item" href="#">একাডেমিক পরীক্ষা</a></li>
+                      <li><a class="dropdown-item" href="#">শিক্ষা আন্দোলন</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">আন্তর্জাতিক</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">উদ্ভাবন</a></li>
+                      <li><a class="dropdown-item" href="#">বিদেশ</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">বই ও গ্রন্থাগার</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">অর্থনীতি ও ব্যবসা</a></li>
+                      <li><a class="dropdown-item" href="#">বিজ্ঞান ও প্রযুক্তি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">ধর্ম ও নৈতিকতা</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">বিনোদন ও সংস্কৃতি</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">আবহাওয়া ও পরিবেশ</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-1 text-end">
+              <a href="#" class="text-dark">
+                <i class="bi bi-search fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Menu for Mobile and Mega Menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">মেনু</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">সর্বশেষ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">শিক্ষাঙ্গন</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">উচ্চশিক্ষা</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">শিক্ষা প্রশাসন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ভর্তি পরীক্ষা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">কর্মসংস্থান</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">স্কলারশিপ</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">খেলাধুলা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">জাতীয়</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ভিডিও স্টোরি</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ফ্যাক্টচেক</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">তারুণ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">একাডেমিক পরীক্ষা</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">শিক্ষা আন্দোলন</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">উদ্ভাবন</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বিদেশ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">বই ও গ্রন্থাগার</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">অর্থনীতি ও ব্যবসা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিজ্ঞান ও প্রযুক্তি</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ধর্ম ও নৈতিকতা</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">বিনোদন ও সংস্কৃতি</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">আবহাওয়া ও পরিবেশ</a>
+            </li>
+
+          </ul>
+          <hr />
+          <div class="d-flex flex-wrap">
+            <a class="btn btn-info me-2 mb-2" href="#"><i class="bi bi-grid"></i> সব বিভাগ</a>
+            <a class="btn btn-outline-dark me-2 mb-2" href="#"><i class="bi bi-film"></i> ভিডিও</a>
+
+            <a class="btn btn-outline-dark me-2 mb-2" href="#" target="_blank"><i class="bi bi-megaphone"></i>
+              বিজ্ঞাপন</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pre Header Section End -->
+    <!-- Mobile Header -->
+    <div class="container mobileHeader d-block d-sm-none bg-light">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <div class="text-end marginT8">
+            <span onclick="openNav()"><i class="fa fa-bars sidebarIcon colorBlack"></i></span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="marginT2 text-start">
+            <a aria-label="Logo" href="#">
+              <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="text-end marginT4">
+            <a class="mobileHeaderOtherSite colorBlack" aria-label="English" href="#" target="_blank">English</a>
+            <a class="mobileHeaderOtherSite text-center" aria-label="Search" href="#">
+              <span><i class="fa fa-magnifying-glass searchIcon colorBlack"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div id="mySidepanel" class="sidepanel d-block d-sm-none">
+      <div class="container borderC1B1">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <div class="paddingT5 paddingB5 marginT5">
+              <a aria-label="Logo" href="#">
+                <img src="assets/images/logo.svg" alt="Logo" height="35" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="text-end marginT10">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 paddingLR5">
+            <div class="borderC1-1 borderRadius5 marginT15 marginB15 paddingLR20 paddingT10 paddingB10">
+              <form method="get" action="#">
+                <input type="hidden" name="search" value="yes" />
+                <div class="row g-2">
+                  <div class="col-10">
+                    <input type="text" name="headline" class="form-control" placeholder="এখানে খুঁজুন..." />
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-block bg-black colorWhite">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="প্রচ্ছদ" href="#"><i class="fa fa-caret-right"></i> প্রচ্ছদ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সর্বশেষ" href="#/latest"><i class="fa fa-caret-right"></i>
+              সর্বশেষ</a>
+          </div>
+          <div class="loadMenubarCategories"></div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="সব বিভাগ" href="#/categories"><i class="fa fa-caret-right"></i> সব
+              বিভাগ</a>
+          </div>
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="আর্কাইভ" href="#/archive"><i class="fa fa-caret-right"></i>
+              আর্কাইভ</a>
+          </div>
+
+          <div class="col-6">
+            <a class="sidebarCatTitle" aria-label="বিজ্ঞাপন" href="#/advertisement" target="_blank"><i
+                class="fa fa-caret-right"></i> বিজ্ঞাপন</a>
+          </div>
+
+          <div class="col-12 marginT20">
+            <div class="topSocialIcon text-center borderC1T1 borderC1B1 padding10">
+              <a aria-label="Facebook" href="#" target="_blank" class="fa-brands fa-facebook"></a>
+              <a aria-label="Twitter" href="#" target="_blank" class="fa-brands fa-x-twitter"></a>
+              <a aria-label="Linkedin" href="#" target="_blank" class="fa-brands fa-linkedin"></a>
+              <a aria-label="Instagram" href="#" target="_blank" class="fa-brands fa-instagram"></a>
+              <a aria-label="Youtube" href="#" target="_blank" class="fa-brands fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- about us english section start -->
+<section id="about-us">
+  <div class="container-fluid">
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-12 col-md-9 mx-auto">
+          <div class="about-us">
+            <h3 class="my-1">
+              <span class="fw-bold text-warning text-uppercase">About Us</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 my-2 mx-auto">
+          <p class="" >On 17 May 2018, The Daily Campus began its <strong>journey</strong> as a digital news platform dedicated to <strong>education, campus, and youth stories</strong>. With a commitment to credible journalism and innovative presentation, we have become a trusted voice for students, teachers, parents, and young people across Bangladesh, delivering stories that <strong>inform, inspire, and ignite meaningful conversations</strong>.</p>
+
+          <h3 class="fw-bold text-uppercase">OUR MISSION</h3>
+          <p>The Daily Campus is devoted to reflecting the voices of Bangladesh’s education community and youth. We strive to celebrate their achievements, address their challenges, and foster a space where diverse perspectives are valued. Our goal is to provide impactful and accessible news through breaking stories, in-depth features, and thought-provoking opinion pieces, all while upholding the highest standards of journalistic ethics.</p>
+
+          <h3 class="fw-bold text-uppercase">OUR VALUES & PRINCIPLES</h3>
+          <p>At The Daily Campus, our work is guided by core values that define our commitment to credible journalism and our community:</p>
+          <ul>
+            <li><strong>Integrity</strong><br>We uphold the highest ethical standards in reporting, ensuring truth and accuracy in every story we tell.</li>
+            <li><strong>Community Focus</strong><br>We amplify the voices of students, teachers, parents, and youth, celebrating their achievements and addressing their challenges with passion.</li>
+            <li><strong>Inclusivity</strong><br>We foster a platform where diverse perspectives are valued, encouraging meaningful dialogue within the education and youth communities.</li>
+            <li><strong>Innovation</strong><br>We embrace new technologies and creative storytelling to deliver news that is impactful and accessible to our audience.</li>
+            <li><strong>Credibility</strong><br>We are dedicated to producing original content that maintains trust and serves as a reliable source for our readers.</li>
+          </ul>
+
+          <h3 class="fw-bold text-uppercase">OUR COMMITMENT</h3>
+          <p>Led by our editor, The Daily Campus is steadfast in maintaining credibility and originality in our content. We are committed to adapting to the evolving media landscape by embracing new technologies and storytelling formats to meet the changing needs of our audience. Our focus remains on delivering news that resonates with our readers while encouraging meaningful dialogue within and beyond the education and youth communities.</p>
+
+          <h3 class="fw-bold text-uppercase">OUR READERS</h3>
+          <p>Our strength lies in you—our readers, whose support, curiosity, and trust fuel our mission. We invite you to engage with us through social media, share your feedback, or contribute content to amplify your voice. The Daily Campus is a platform where your stories matter, and we are dedicated to serving as a reliable and dynamic source of updates and insights.</p>
+
+          <h3 class="fw-bold text-uppercase">OUR VISION</h3>
+          <p>As we move forward in 2025, The Daily Campus aims to expand our reach and elevate our storytelling. With a passion for innovation and a commitment to ethical journalism, we look to the future with optimism, ready to embrace new opportunities to connect with our audience and drive positive change in Bangladesh’s education and youth sectors.</p>
+
+          <h3 class="fw-bold text-uppercase">RECOGNITION</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about us english section end -->
+
+<!-- about us bangla section start -->
+<section id="about-us-bangla">
+  <div class="container-fluid">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 col-md-9 mx-auto">
+          <div class="about-us">
+            <h2 class="my-1">
+              <span class="fw-bold text-danger text-uppercase">দ্য ডেইলি ক্যাম্পাস সম্পর্কে</span>
+            </h2>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 my-2 mx-auto">
+          <p>১৭ মে ২০১৮ তারিখে, দ্য ডেইলি ক্যাম্পাস তার <strong>যাত্রা</strong> শুরু করে একটি ডিজিটাল সংবাদ প্ল্যাটফর্ম হিসেবে, যা <strong>শিক্ষা, ক্যাম্পাস এবং যুব সম্প্রদায়ের গল্পের</strong> জন্য নিবেদিত। বিশ্বাসযোগ্য সাংবাদিকতা এবং উদ্ভাবনী উপস্থাপনার প্রতিশ্রুতি নিয়ে, আমরা বাংলাদেশের ছাত্র, শিক্ষক, অভিভাবক এবং যুব সম্প্রদায়ের জন্য একটি বিশ্বস্ত কণ্ঠস্বর হয়ে উঠেছি, এমন গল্প সরবরাহ করে যা <strong>তথ্য প্রদান করে, অনুপ্রাণিত করে এবং গুরুত্বপূর্ণ কথোপকথনের সূচনা করে</strong>।</p>
+
+          <h3 class="fw-bold text-uppercase">আমাদের লক্ষ্য</h3>
+          <p>দ্য ডেইলি ক্যাম্পাস বাংলাদেশের শিক্ষা সম্প্রদায় এবং যুব সম্প্রদায়ের কণ্ঠস্বর প্রতিফলনের জন্য নিবেদিত। আমরা তাদের অর্জন উদযাপন করতে, তাদের চ্যালেঞ্জ মোকাবিলা করতে এবং এমন একটি প্ল্যাটফর্ম গড়ে তুলতে চাই যেখানে বিভিন্ন দৃষ্টিভঙ্গি মূল্যায়ন করা হয়। আমাদের লক্ষ্য হলো প্রভাবশালী ও সহজলভ্য সংবাদ প্রদান করা—ব্রেকিং নিউজ, গভীর বিশ্লেষণ এবং চিন্তাশীল মতামতের মাধ্যমে, সবসময় সাংবাদিকতার সর্বোচ্চ নৈতিক মান বজায় রেখে।</p>
+
+          <h3 class="fw-bold text-uppercase">আমাদের মূল্যবোধ ও নীতি</h3>
+          <p>দ্য ডেইলি ক্যাম্পাসে, আমাদের কাজ বিশ্বাসযোগ্য সাংবাদিকতা এবং আমাদের সম্প্রদায়ের প্রতি প্রতিশ্রুতি দ্বারা নির্দেশিত মূল মূল্যবোধ দ্বারা পরিচালিত হয়:</p>
+          <ul>
+            <li><strong>সততা</strong><br>আমরা প্রতিবেদনে সর্বোচ্চ নৈতিক মান বজায় রাখি, প্রতিটি গল্পে সত্য এবং নির্ভুলতা নিশ্চিত করি।</li>
+            <li><strong>কমিউনিটি ফোকাস</strong><br>আমরা ছাত্র, শিক্ষক, অভিভাবক এবং যুব সম্প্রদায়ের কণ্ঠস্বর তুলে ধরি, তাদের অর্জন উদযাপন করি এবং উৎসাহের সঙ্গে তাদের চ্যালেঞ্জ মোকাবিলা করি।</li>
+            <li><strong>অন্তর্ভুক্তি</strong><br>আমরা এমন একটি প্ল্যাটফর্ম গড়ে তুলি যেখানে বিভিন্ন দৃষ্টিভঙ্গি মূল্যায়ন করা হয়, শিক্ষা এবং যুব সম্প্রদায়ের মধ্যে গুরুত্বপূর্ণ কথোপকথন উৎসাহিত করে।</li>
+            <li><strong>উদ্ভাবন</strong><br>আমরা নতুন প্রযুক্তি এবং সৃজনশীল গল্প বলার পদ্ধতি গ্রহণ করি, যাতে আমাদের পাঠকদের জন্য সংবাদ প্রভাবশালী এবং সহজলভ্য হয়।</li>
+            <li><strong>বিশ্বাসযোগ্যতা</strong><br>আমরা মৌলিক কনটেন্ট তৈরির জন্য নিবেদিত, যা বিশ্বাস বজায় রাখে এবং পাঠকদের জন্য নির্ভরযোগ্য উৎস হিসেবে কাজ করে।</li>
+          </ul>
+
+          <h3 class="fw-bold text-uppercase">আমাদের প্রতিশ্রুতি</h3>
+          <p>আমাদের সম্পাদকের নেতৃত্বে, দ্য ডেইলি ক্যাম্পাস আমাদের কনটেন্টে বিশ্বাসযোগ্যতা এবং মৌলিকতা বজায় রাখতে দৃঢ়প্রতিজ্ঞ। আমরা পরিবর্তনশীল মিডিয়া পরিস্থিতির সঙ্গে খাপ খাইয়ে নতুন প্রযুক্তি এবং গল্প বলার পদ্ধতি গ্রহণ করতে প্রতিশ্রুতিবদ্ধ, যাতে আমাদের পাঠকদের পরিবর্তনশীল চাহিদা পূরণ করা যায়। আমাদের ফোকাস শিক্ষা এবং যুব সম্প্রদায়ের মধ্যে এবং তার বাইরে গুরুত্বপূর্ণ কথোপকথন উৎসাহিত করার মাধ্যমে পাঠকদের কাছে প্রভাবশালী সংবাদ পৌঁছে দেওয়ার উপর থাকে।</p>
+
+          <h3 class="fw-bold text-uppercase">আমাদের পাঠক</h3>
+          <p>আমাদের শক্তি আপনাদের মধ্যে—আমাদের পাঠকদের মধ্যে, যাদের সমর্থন, কৌতূহল এবং বিশ্বাস আমাদের লক্ষ্যকে এগিয়ে নিয়ে যায়। আমরা আপনাকে সামাজিক মাধ্যমে আমাদের সঙ্গে যুক্ত হতে, প্রতিক্রিয়া শেয়ার করতে বা কনটেন্ট অবদানের মাধ্যমে আপনার কণ্ঠস্বর তুলে ধরতে আমন্ত্রণ জানাই। দ্য ডেইলি ক্যাম্পাস এমন একটি প্ল্যাটফর্ম যেখানে আপনার গল্পগুলো গুরুত্বপূর্ণ, এবং আমরা নির্ভরযোগ্য এবং গতিশীল উৎস হিসেবে আপডেট এবং অন্তর্দৃষ্টি প্রদানের জন্য নিবেদিত।</p>
+
+          <h3 class="fw-bold text-uppercase">রূপকল্প</h3>
+          <p>২০২৫ সালে এগিয়ে যাওয়ার সঙ্গে সঙ্গে, দ্য ডেইলি ক্যাম্পাস আমাদের পরিধি সম্প্রসারণ এবং গল্প বলার মান উন্নত করার লক্ষ্য নিয়েছে। উদ্ভাবনের প্রতি আবেগ এবং নৈতিক সাংবাদিকতার প্রতি প্রতিশ্রুতি নিয়ে, আমরা আশাবাদী ভবিষ্যতের দিকে তাকিয়ে আছি, আমাদের পাঠকদের সঙ্গে সংযোগ স্থাপন এবং বাংলাদেশের শিক্ষা ও যুব খাতে ইতিবাচক পরিবর্তন আনার নতুন সুযোগ গ্রহণের জন্য প্রস্তুত।</p>
+
+          <h3 class="fw-bold text-uppercase">স্বীকৃতি</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about us bangla section end -->
+
+
+<!-- footer-section start -->
+<section class="desktopFooter hidden-xs hidden-print">
+  <div class="container">
+    <div class="row desktopFlexRow">
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-3 pt-5 gap-3">
+            <a aria-label="Logo" href="/">
+              <img src="assets/img/TDC.svg" alt="The Daily Campus Logo" height="50" loading="lazy" />
+            </a>
+          </div>
+          <div class="col-12">
+            <h6 class="text-start">সম্পাদক: মাহবুব রনি</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-5 pt-5 gap-3 text-center">
+            <div class="followDiv">
+              <p class="marginB0 title11 marginT10">অনুসরণ করুন</p>
+              <div class="topSocialIcon">
+                <a aria-label="Facebook" href="https://www.facebook.com/thedailycampusoriginal/" target="_blank" class="fa fa-brands fa-facebook borderRadius0"></a>
+                <a aria-label="Instagram" href="https://www.instagram.com/thedailycampusbd/" target="_blank" class="fa fa-brands fa-instagram borderRadius0"></a>
+                <a aria-label="Twitter" href="https://twitter.com/thedailycampus2" target="_blank" class="fa fa-brands fa-x-twitter borderRadius0"></a>
+                <a aria-label="Youtube" href="https://www.youtube.com/channel/UCbeJebXfZ2Zhi0TiZKNYC0g?sub_confirmation=1" target="_blank" class="fa fa-brands fa-youtube borderRadius0"></a>
+                <a href="https://news.google.com/publications/CAAqBwgKMO-zpAwwgayzBA" target="_blank">
+                  <img width="24" height="24" src="https://files.thedailycampus.com/img/default/Gnews.png" alt="Google News" />
+                </a>
+                <a href="https://t.me/dailycampus" target="_blank">
+                  <img width="24" height="24" src="https://files.thedailycampus.com/img/default/telegram.png" alt="Telegram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 mb-2 gap-3">
+        <div class="footer-menu-group">
+          <a href="#about-us">আমাদের সম্পর্কে</a>
+          <a href="#contact">যোগাযোগ</a>
+          <a href="#terms-and-conditions">নীতিমালা ও শর্তাবলি</a>
+          <a href="#privacy-policy">গোপনীয়তা নীতি</a>
+          <a href="#ads">বিজ্ঞাপন</a>
+          <a href="#jobs">চাকরি</a>
+          <a href="#citizen-journalism">নাগরিক সাংবাদিকতা</a>
+          <a href="#national-international-days">জাতীয় দিবস</a>
+          <a href="#public-holidays-2025">সরকারি ছুটির তালিকা</a>
+          <a href="#prayer-times">নামাজের সময়সূচি</a>
+          <a href="#unicode-converter">বাংলা কনভার্টার</a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="footer-menu-group">
+        <p class="text-center fs-6 text">স্বত্ব © ২০১৮-২০২৫, দ্য ডেইলি ক্যাম্পাস</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer-section end -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script defer src="assets/js/jquery.flexslider.js"></script>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").classList.add("open");
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").classList.remove("open");
+    }
+    var width = $(window).width();
+    if (width >= 768) {
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 80) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+            $('.stickyHeaderLogoDiv').removeClass('col-md-1');
+            $('.stickyHeaderLogoDiv').addClass('col-md-2');
+            $('.stickyHeaderMenuDiv').removeClass('col-md-10');
+            $('.stickyHeaderMenuDiv').addClass('col-md-9');
+            $('.stickyLogo').show();
+            $('.desktopStickyBar').show();
+          } else {
+            document.getElementById('navbar_top').classList.remove('fixed-top');
+            document.body.style.paddingTop = '0';
+            $('.stickyHeaderLogoDiv').removeClass('col-md-2');
+            $('.stickyHeaderLogoDiv').addClass('col-md-1');
+            $('.stickyHeaderMenuDiv').removeClass('col-md-9');
+            $('.stickyHeaderMenuDiv').addClass('col-md-10');
+            $('.stickyLogo').hide();
+            $('.desktopStickyBar').hide();
+          }
+        });
+      });
+    }
+  </script>
+
+  <script>
+ 
+    const carousel = document.querySelector('#carouselExample');
+    const progressBar = document.querySelector('.custom-progress-bar');
+    const pauseButton = document.querySelector('.carousel-pause');
+    const playButton = document.querySelector('.carousel-play');
+
+    // Pause/Play functionality
+    pauseButton.addEventListener('click', () => {
+      carousel.carousel('pause');
+      progressBar.classList.add('paused');
+      pauseButton.style.display = 'none';
+      playButton.style.display = 'block';
+    });
+
+    playButton.addEventListener('click', () => {
+      carousel.carousel('cycle');
+      progressBar.classList.remove('paused');
+      pauseButton.style.display = 'block';
+      playButton.style.display = 'none';
+    });
+
+    // Reset progress bar on slide change
+    carousel.addEventListener('slide.bs.carousel', () => {
+      const bar = progressBar.querySelector('.bar');
+      bar.style.animation = 'none';
+      bar.offsetHeight; // Trigger reflow
+      bar.style.animation = 'progress 5s linear infinite';
+      if (progressBar.classList.contains('paused')) {
+        bar.style.animationPlayState = 'paused';
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
