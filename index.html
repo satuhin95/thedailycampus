@@ -187,7 +187,7 @@
               </div>
             </div>
             <div class="col-lg-1 text-end">
-              <a href="#" class="text-dark">
+              <a href="#" class="text-dark" aria-label="Read more">
                 <i class="bi bi-search fs-5"></i>
               </a>
             </div>
@@ -316,7 +316,7 @@
                     <input type="text" name="headline" class="form-control" placeholder="এখানে খুঁজুন..." />
                   </div>
                   <div class="col-2">
-                    <button type="submit" class="btn btn-block bg-black colorWhite">
+                    <button id="al" type="submit" class="btn btn-block bg-black colorWhite">
                       <i class="fa fa-search"></i>
                     </button>
                   </div>
@@ -389,7 +389,7 @@
                   <div class="card mb-3 borderNone">
                    <div class="row g-0">
                     <div class="col-md-4 order-md-2 order-1">
-                      <img class="img-fluid" src="assets/img/small.jpg" alt="..." loading="lazy" />
+                      <img class="img-fluid" src="assets/img/small.jpg" alt="small-img" loading="lazy" />
                     </div>
                     <div class="col-md-8 order-md-1 order-2">
                       <h5 class="card-title">
@@ -399,12 +399,14 @@
                   </div>
                     <div class="row d-none d-md-block">
                       <div class="col-12">
+                         <h5 class="card-title">
                         <p>
                           দুই ম্যাচের আমিরাত সিরিজটা ছিল একধরনের গা গরমের
                           উপলক্ষ। পাকিস্তানে টি–টোয়েন্টি সিরিজ খেলতে যাওয়ার
                           পথে শারজার দুটি ম্যাচকে এর চেয়ে বেশি গুরুত্ব
                           বাংলাদেশ দল দিয়েছিল বলে মনে হয় না।
                         </p>
+                        </h5>
                       </div>
                     </div>
                   </div>
@@ -1450,7 +1452,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
-                      <button class="carousel-pause btn btn-sm position-absolute top-0 end-0 m-2" style="z-index: 1;">
+                      <button id="text" class="carousel-pause btn btn-sm position-absolute top-0 end-0 m-2" style="z-index: 1;">
                         <i class="fas fa-pause"></i>
                       </button>
                       <button class="carousel-play btn btn-sm position-absolute top-0 end-0 m-2"
@@ -1685,9 +1687,10 @@
             <h2>অনলাইন ভোট</h2>
             <hr />
             <h6 class="poll-question">
-              নির্বাচনের আগে গণহত্যার বিচার করতে হবে। জাতীয় নাগরিক পার্টির
+              <p>নির্বাচনের আগে গণহত্যার বিচার করতে হবে। জাতীয় নাগরিক পার্টির
               (এনসিপি) উত্তরাঞ্চলীয় মুখ্য সংগঠক সারজিস আলমের এই মন্তব্যের
               সঙ্গে আপনি কি একমত?
+              </p> 
             </h6>
             <form>
               <input type="hidden" name="id" value="941" />
@@ -2822,17 +2825,17 @@
       <div class="row justify-content-center">
         <div class="col-lg-12 mb-2 gap-3">
           <div class="footer-menu-group">
-            <a href="#about-us" target="_blank">আমাদের সম্পর্কে</a>
-            <a href="#contact" target="_blank">যোগাযোগ</a>
-            <a href="#terms-and-conditions" target="_blank">নীতিমালা ও শর্তাবলি </a>
-            <a href="#privacy-policy" target="_blank">গোপনীয়তা নীতি</a>
-            <a href="#ads" target="_blank">বিজ্ঞাপন</a>
-            <a href="#jobs" target="_blank">চাকরি</a>
-            <a href="#" target="_blank">নাগরিক সাংবাদিকতা</a>
-            <a href="#জাতীয়-ও-আন্তর্জাতিক-দিবস-উদযাপন" target="_blank">জাতীয় দিবস</a>
-            <a href="#সরকারি-ছুটির-তালিকা-2025" target="_blank">সরকারি ছুটির তালিকা</a>
-            <a href="#আজকের-নামাজ-সেহরি-ইফতারের-সময়" target="_blank">নামাজের সময়সূচি</a>
-            <a href="#unicode-converter" target="_blank">বাংলা কনভার্টার</a>
+            <a target="_blank" href="#about-us" aria-label="আমাদের সম্পর্কে">আমাদের সম্পর্কে</a>
+            <a target="_blank" href="#contact"  aria-label="যোগাযোগ">যোগাযোগ</a>
+            <a target="_blank" href="#terms-and-conditions" aria-label="নীতিমালা ও শর্তাবলি">নীতিমালা ও শর্তাবলি </a>
+            <a target="_blank" href="#privacy-policy" aria-label="গোপনীয়তা নীতি">গোপনীয়তা নীতি</a>
+            <a target="_blank" href="#ads" aria-label="বিজ্ঞাপন">বিজ্ঞাপন</a>
+            <a target="_blank" href="#jobs" aria-label="চাকরি">চাকরি</a>
+            <a target="_blank" href="#" aria-label="নাগরিক সাংবাদিকতা">নাগরিক সাংবাদিকতা</a>
+            <a target="_blank" href="#জাতীয়-ও-আন্তর্জাতিক-দিবস-উদযাপন" aria-label="গোপনীয়তা নীতি">জাতীয় দিবস</a>
+            <a target="_blank" href="#সরকারি-ছুটির-তালিকা-2025" aria-label="সরকারি ছুটির তালিকা">সরকারি ছুটির তালিকা</a>
+            <a target="_blank" href="#আজকের-নামাজ-সেহরি-ইফতারের-সময়" aria-label="নামাজের সময়সূচি">নামাজের সময়সূচি</a>
+            <a target="_blank" href="#unicode-converter"  aria-label="বাংলা কনভার্টার">বাংলা কনভার্টার</a>
           </div>
         </div>
       </div>
