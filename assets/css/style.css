@@ -227,6 +227,12 @@ body {
             font-size: 16px;
         }
         .sidebarCatTitle i { margin-right: 5px; }
+        .headertopSocialIcon a {
+          margin: 0 8px;
+            color: #1d1a1a;
+            font-size: 20px;
+            text-decoration: none;
+        }
         .topSocialIcon a {
             margin: 0 10px;
             color: #ffffff;
