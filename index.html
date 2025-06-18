@@ -2781,6 +2781,7 @@
   <!-- footer-section start -->
   <section class="desktopFooter hidden-xs hidden-print">
     <div class="container">
+      <span  class="go-to-top hidden-print" ><i class="fa fa-angle-up" aria-hidden="true"></i></span>
       <div class="row desktopFlexRow">
         <div class="col-lg-6">
           <div class="row justify-content-center">
@@ -2892,24 +2893,26 @@
       });
     }
   </script>
+ <script>
+$(document).ready(function() {
+    // Show/hide button on scroll
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            $('.go-to-top').fadeIn();
+        } else {
+            $('.go-to-top').fadeOut();
+        }
+    });
+
+    // Scroll to top on click
+    $('.go-to-top').on('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
 
   <script>
-    // $(window).on('load', function(){
-    // 				$('.flexslider').flexslider({
-    // 					controlNav: false,
-    // 					animation: "slide",
-    // 					animationLoop: false,
-    // 					directionNav: true,
-    // 					itemWidth: 320,
-    // 					itemMargin: 20,
-    // 					pausePlay: true,
-    // 					nextText: "",
-    // 					prevText: "",
-    // 					start: function(slider){
-    // 						$('body').removeClass('loading');
-    // 					}
-    // 				});
-    // 			});
+
     const carousel = document.querySelector('#carouselExample');
     const progressBar = document.querySelector('.custom-progress-bar');
     const pauseButton = document.querySelector('.carousel-pause');

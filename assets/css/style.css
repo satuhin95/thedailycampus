@@ -605,3 +605,20 @@ ul.newsinfo li:not(:last-child) {
     padding-right: 10px;
 }
 /* category page end */
+
+.go-to-top {
+    display: none;
+    background-color: #EFBD0B;
+    color: white;
+    padding: 5px 9px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .8s;
+}
