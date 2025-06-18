@@ -210,7 +210,7 @@ body {
         .marginT4 { margin-top: 4px; }
         .marginT5 { margin-top: 5px; }
         .marginT8 { margin-top: 8px; }
-        .marginT10 { margin-top: 10px; }
+        .marginT10 { margin-top: 10px; color: rgb(255,255,255); }
         .marginT15 { margin-top: 15px; }
         .marginT20 { margin-top: 20px; }
         .marginB15 { margin-bottom: 15px; }
@@ -434,6 +434,7 @@ paddingLR0 {
     text-align: center;
     padding: 10px 0px;
 }
+.footer-menu-group p {color: rgb(255,255,255);}
 .footer-menu-group a {
     font-size: 15px;
     margin-right: 12px;
