@@ -383,15 +383,11 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
 /* flexslider picture start */
 
+.image-hut {
+  color: rgb(255,255,255);
+}
 
 /* footer serction start  */
     .desktopFooter {
@@ -420,8 +416,6 @@ paddingLR0 {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
-
-
 
 
 .footer .footer-menu-group
